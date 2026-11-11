@@ -1,0 +1,1025 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta name="description" content="Prepara tu kit de supervivencia ante el apocalipsis zombi: inventario, mochila, botiquín, simulacros y escuadrón. Sin cuentas, sin anuncios, funciona sin conexión."><meta name="theme-color" content="#1f1a14"><link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon-192.png"><link rel="apple-touch-icon" href="icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Mi Refugio"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Mi Refugio · Kit de supervivencia zombi</title><style>
+:root{--bg:#0a0d08;--pn:#131a10;--ln:#2c3a22;--g:#7dff4a;--a:#ffb000;--r:#ff3b30;--t:#cfe8bf;--m:#7d9070;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}*{box-sizing:border-box}
+body{margin:0;background:var(--bg) repeating-linear-gradient(0deg,#0000 0 2px,#0004 2px 3px);color:var(--t);font:15px/1.4 "Courier New",monospace;max-width:900px;margin:auto;padding:10px}
+h1{margin:4px 0;color:var(--g);font-size:22px;text-shadow:0 0 8px var(--g);letter-spacing:1px}
+.tick{background:#2a0a07;border:1px dashed var(--r);color:var(--a);padding:6px 8px;font-size:12px;margin:6px 0}
+.pn{background:var(--pn);border:1px solid var(--ln);padding:10px;margin:8px 0}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+label{font-size:12px;color:var(--m);display:flex;flex-direction:column;gap:2px}
+input,select,button{background:#0d130b;color:var(--g);border:1px solid var(--ln);padding:7px;font:inherit;border-radius:2px}
+button{cursor:pointer}button.on{background:var(--g);color:#000;font-weight:bold}
+.rings{display:flex;gap:10px;flex-wrap:wrap;justify-content:space-around}
+.rg{text-align:center;font-size:11px}.ring{width:68px;height:68px;border-radius:50%;background:conic-gradient(var(--c) calc(var(--p)*1%),#222 0);display:grid;place-items:center;margin:auto}
+.ring b{background:var(--pn);width:52px;height:52px;border-radius:50%;display:grid;place-items:center;font-size:14px;color:var(--c)}
+.it{display:flex;gap:8px;align-items:flex-start;padding:7px 0;border-bottom:1px solid var(--ln)}
+.it input{width:20px;height:20px;accent-color:var(--g);flex:none}.it.d{opacity:.5}.it.d .nm{text-decoration:line-through}
+.q{color:var(--a);font-weight:bold}.j{font-size:11px;color:var(--m);font-style:italic}
+.bd{font-size:10px;border:1px solid var(--g);color:var(--g);padding:0 3px;margin-right:3px}.bd.x{border-color:var(--r);color:var(--r)}
+.kp{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:8px}.k{background:#0d130b;border:1px solid var(--ln);padding:8px;text-align:center}.k b{display:block;font-size:22px;color:var(--a)}
+.bar{height:10px;background:#222;margin:3px 0}.bar i{display:block;height:100%;background:var(--g)}
+h2{font-size:15px;color:var(--a);margin:6px 0}small{color:var(--m)}
+@property --p{syntax:"<number>";inherits:false;initial-value:0}
+body[data-sc=A]{--g:#ffc247;--a:#ff8a3d}body[data-sc=N]{--g:#b6ff3a;--a:#e8ff7a}body[data-sc=X]{--g:#c58bff;--a:#7ef0ff}body[data-sc=Z]{--g:#ff7a3d;--a:#ff4d4d}
+:root{--bg:#06080a;--pn:#0e1412;--ln:#ffffff14;--t:#e6efe8;--m:#8a9a90;--r:#ff4d4d}
+body{font:16px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:radial-gradient(120% 60% at 50% -10%,color-mix(in srgb,var(--g) 18%,transparent),transparent 60%),var(--bg);padding:12px 12px 100px;-webkit-tap-highlight-color:transparent}
+.pn{background:linear-gradient(160deg,#ffffff0d,#ffffff03);border:1px solid var(--ln);border-radius:18px;padding:14px;margin:12px 0;backdrop-filter:blur(8px);box-shadow:0 8px 30px #0008}
+.hd{display:flex;gap:12px;align-items:center;margin:6px 0 10px}
+.disc{flex:none;width:58px;height:58px;border-radius:50%;background:radial-gradient(circle,#fff 0 6%,#3fa66a 7% 16%,#2b6fa8 17% 68%,#eaf6ff 69% 80%,#0000 81%);box-shadow:0 0 24px color-mix(in srgb,var(--g) 50%,transparent);animation:sp 20s linear infinite;position:relative}
+.disc:after{content:"";position:absolute;top:2px;left:50%;width:9px;height:9px;margin-left:-4px;border-radius:50%;background:#ffd34d;box-shadow:0 0 10px #ffd34d}
+@keyframes sp{to{transform:rotate(360deg)}}
+h1{font:900 27px/1 system-ui;letter-spacing:2px;background:linear-gradient(90deg,var(--g),#fff,var(--g));background-size:200%;-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:none;animation:sh 4s linear infinite;margin:0}
+@keyframes sh{to{background-position:-200% 0}}
+.sb{font-size:11px;letter-spacing:1.5px;color:var(--m);text-transform:uppercase;margin-top:5px}
+.tick{border-radius:14px;background:#2a0b0b;border:1px solid #ff4d4d66;color:#ffd0c8;font-size:13px;padding:10px 12px;animation:al 2s ease-in-out infinite}
+@keyframes al{50%{box-shadow:0 0 18px #ff4d4d55}}
+#tk span{display:block;animation:up .5s both}
+input,select,button{border-radius:12px;font-size:16px;padding:11px;background:#ffffff0a;border:1px solid var(--ln);color:var(--t)}
+.pn>.row label{flex:1 1 42%}.pn>.row input,.pn>.row select{width:100%!important}.row label{text-transform:uppercase;letter-spacing:1px;font-size:10px}
+.rings{display:grid;grid-template-columns:repeat(5,1fr);gap:6px}.rg{font-size:10px;color:var(--m)}
+.ring{width:100%;max-width:62px;height:auto;aspect-ratio:1;transition:--p 1.2s cubic-bezier(.2,.8,.2,1)}.ring b{width:78%;height:78%;font-size:12px;background:#0a0f0d}
+.it{padding:13px 2px;gap:12px}.it input{width:26px;height:26px;margin-top:2px}
+.j{display:block;margin-top:6px;padding:6px 9px;border-left:3px solid var(--r);background:#ff4d4d12;color:#ffb3aa;font-size:12px;font-style:normal;border-radius:0 8px 8px 0}
+.cn{border-radius:18px;padding:14px;margin:12px 0;background:repeating-linear-gradient(135deg,#ff4d4d12 0 10px,#0000 10px 20px),#1a0909;border:1px dashed #ff4d4d99;animation:up .5s both}.cn b{display:block;color:var(--r);font-size:11px;letter-spacing:2px;margin-bottom:6px}.cn span{font-size:14px;color:#ffe3de}
+.bar{height:8px;border-radius:8px;overflow:hidden}.bar i{border-radius:8px;transition:width .8s cubic-bezier(.2,.8,.2,1);background:linear-gradient(90deg,var(--a),var(--g))}
+.k{border-radius:14px;background:#ffffff08}.k b{font-size:26px}h2{font-size:13px;letter-spacing:1.5px;text-transform:uppercase}
+@keyframes up{from{opacity:0;transform:translateY(14px)}}
+.an .pn,.an .cn,.an .k{animation:up .5s both}.an .it{animation:up .4s both}.an .it:nth-child(3n){animation-delay:.08s}.an .it:nth-child(3n+1){animation-delay:.16s}
+#tabs{position:fixed;left:0;right:0;bottom:0;display:grid;grid-template-columns:repeat(4,1fr);gap:4px;padding:8px 8px calc(8px + env(safe-area-inset-bottom,0px));background:#06080ae8;backdrop-filter:blur(14px);border-top:1px solid var(--ln);z-index:9}
+#tabs button{border:0;background:none;color:var(--m);font-size:12px;padding:9px 2px;border-radius:12px}
+#tabs button.on{background:color-mix(in srgb,var(--g) 18%,transparent);color:var(--g);font-weight:700}
+
+body[data-sc=A]{--g:#e3b341;--a:#f1d58a}body[data-sc=N]{--g:#a9c23f;--a:#d4e38a}body[data-sc=X]{--g:#4fb3d9;--a:#9bd8ee}body[data-sc=Z]{--g:#d08a4e;--a:#ecc08f}
+:root{--bg:#07090a;--t:#e8e6dc;--m:#8b8f82;--r:#d9534f}
+body{background:linear-gradient(#ffffff05 1px,transparent 1px) 0 0/100% 32px,radial-gradient(120% 50% at 50% -10%,color-mix(in srgb,var(--g) 14%,transparent),transparent 65%),var(--bg)}
+.pn{border-radius:6px;border:1px solid #ffffff1a;border-top:2px solid var(--g)}
+.emb{flex:none;width:50px;height:58px;clip-path:polygon(50% 0,100% 20%,100% 70%,50% 100%,0 70%,0 20%);background:var(--g);display:grid;place-items:center;color:#07090a;font:900 15px system-ui;animation:pl 3s ease-in-out infinite}
+@keyframes pl{50%{filter:brightness(1.3)}}
+h1{font:800 26px/1 "Arial Narrow","Roboto Condensed",system-ui;letter-spacing:8px;background:none;color:var(--t);animation:none}
+.tick{border-radius:6px;background:#ffffff08;border:1px solid #ffffff1a;border-left:3px solid var(--g);color:var(--t);animation:none}
+.cn{border-radius:6px;background:#ffffff08;border:1px solid #ffffff1a;border-left:3px solid var(--g)}.cn b{color:var(--g)}.cn span{color:var(--t)}
+.j{border-left:3px solid var(--g);background:#ffffff08;color:var(--m)}.bd.x{border-color:var(--m);color:var(--m)}
+input,select,button,.k{border-radius:6px}#tabs button{border-radius:4px}
+
+.gb{margin-left:auto;font-size:20px;padding:8px 12px}
+#tabs{grid-template-columns:repeat(5,1fr);gap:2px}#tabs button{font-size:10.5px;padding:8px 0}
+.it{flex-wrap:wrap}.bl{display:flex;flex-direction:row;gap:12px;flex:1 1 100%;text-transform:none;letter-spacing:0;font-size:15px;color:var(--t)}.bl input{width:26px;height:26px;flex:none;accent-color:var(--g);margin-top:2px}
+.it input[type=date]{width:auto;height:auto;margin:0 0 0 38px;font-size:14px;padding:7px}
+.pop{position:fixed;top:calc(env(safe-area-inset-top,0px) + 8px);left:10px;right:10px;max-width:700px;margin:auto;z-index:25;background:#0d1210f5;backdrop-filter:blur(12px);border:1px solid #ffffff1f;border-left:3px solid var(--g);border-radius:6px;padding:12px 14px;transform:translateY(-170%);transition:transform .45s cubic-bezier(.2,.8,.2,1);box-shadow:0 10px 30px #000a;font-size:14px}.pop.on{transform:none}
+.pop b{display:block;color:var(--g);font-size:10px;letter-spacing:2px;text-transform:uppercase;margin-bottom:4px}.pb{display:flex;gap:8px;margin-top:8px}.pb button{padding:6px 10px;font-size:12px}.pb button:last-child{margin-left:auto}
+.sheet{position:fixed;inset:0;background:#000b;z-index:30;opacity:0;pointer-events:none;transition:opacity .3s;display:flex;align-items:flex-end}.sheet.on{opacity:1;pointer-events:auto}
+.sh{background:#0d1210;border-top:2px solid var(--g);border-radius:12px 12px 0 0;padding:16px 16px calc(16px + env(safe-area-inset-bottom,0px));max-height:88vh;overflow-y:auto;width:100%;max-width:900px;margin:auto;transform:translateY(30px);transition:transform .35s}.sheet.on .sh{transform:none}
+.sh li{margin:6px 0;font-size:14px}.sh a{color:var(--g)}
+
+:root{--pf:"Press Start 2P",monospace;--vf:"VT323","Courier New",monospace}
+body{font:21px/1.15 var(--vf);background:radial-gradient(100% 50% at 50% 0,#2a1d0a66,transparent),#080604;color:#e9dfc3}
+body:after{content:"";position:fixed;inset:0;pointer-events:none;z-index:50;background:repeating-linear-gradient(0deg,#0000 0 2px,#0000002e 2px 3px),radial-gradient(120% 90% at 50% 50%,#0000 60%,#000a)}
+.pn,.hud,.pop,.sh,.cn,.tick,.k,.j,input,select,button,.bar,.bar i,.slot,.big{border-radius:0}
+.pn{background:#0f0c07;border:3px solid #6b5527;box-shadow:inset 0 0 0 2px #1a1409,0 0 0 2px #000}
+h1{font:19px/1.2 var(--pf);letter-spacing:2px;color:var(--g);text-shadow:3px 3px #000;background:none;animation:none}
+.sb{font:8px/1.4 var(--pf);color:var(--m);letter-spacing:0}
+.emb{clip-path:none;background:none;width:54px;height:54px;animation:none}.emb svg,.big svg,.slot svg{width:100%;height:100%;image-rendering:pixelated;display:block}
+h2,.cn b,.pop b,.k{font-family:var(--pf)}h2{font-size:10px;line-height:1.5;letter-spacing:0}.k b{font:15px var(--pf)}.k{font-size:17px}
+input,select,button{font-family:var(--vf);font-size:20px;background:#17110a;border:2px solid #6b5527;color:#e9dfc3}
+.row label{font:8px/1.4 var(--pf);letter-spacing:0}
+.hud{display:grid;grid-template-columns:1fr 1.35fr;gap:10px;background:#0a0805;border:3px solid #6b5527;box-shadow:inset 0 0 0 2px #1a1409,0 0 0 2px #000;padding:10px;margin:10px 0}
+.ecg{background:#050403;border:2px solid #2a2010}.ecg svg{width:100%;height:62px;display:block}
+.ecg polyline{fill:none;stroke:var(--c);stroke-width:2;vector-effect:non-scaling-stroke;stroke-dasharray:120 30;animation:ec 1.4s linear infinite}@keyframes ec{to{stroke-dashoffset:-150}}
+.ecg b{display:block;text-align:center;font:9px var(--pf);color:var(--c);padding:2px 0 8px}
+.sg>div{display:flex;align-items:center;gap:6px;margin:4px 0}.sg span{width:84px;font-size:16px;color:var(--m)}.sgb{display:flex;gap:1px;flex:1}.sgb u{flex:1;height:10px;background:#1d1608;display:block}.sgb u.f{background:var(--g)}.sg em{font-style:normal;width:38px;text-align:right;font-size:17px}
+.ih{display:flex;justify-content:space-between;font:9px var(--pf);color:var(--a);margin-bottom:10px}
+.gr{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}@media(min-width:600px){.gr{grid-template-columns:repeat(6,1fr)}}
+.cat{grid-column:1/-1;font:9px var(--pf);color:var(--a);margin:10px 0 2px;border-bottom:2px solid #3a2d14;padding-bottom:5px}
+.slot{position:relative;aspect-ratio:1;padding:11px;background:#1b140a;border:2px solid #3a2d14;box-shadow:inset 0 0 0 2px #0a0703}
+.slot svg,.big svg{filter:grayscale(1) brightness(.55);opacity:.55}.slot.on svg,.big.on svg{filter:drop-shadow(2px 2px 0 #000);opacity:1}
+.slot i{position:absolute;right:4px;bottom:3px;font:normal 9px var(--pf);color:#8b8f82;text-shadow:1px 1px #000}.slot.on i{color:#fff}
+.slot.sel{border-color:var(--g);animation:bl .7s steps(2) infinite}@keyframes bl{50%{border-color:#1d2a14}}
+.det{position:sticky;bottom:calc(74px + env(safe-area-inset-bottom,0px));z-index:4;display:flex;gap:12px;flex-wrap:wrap;background:#0f0c07f5}
+.big{width:86px;height:86px;flex:none;padding:12px;background:#1b140a;border:2px solid #6b5527}
+.dt{flex:1;min-width:0}.dt h3{font:11px/1.5 var(--pf);margin:0 0 6px;color:var(--a)}.dt p{margin:6px 0 0;color:var(--m)}.dt .bad{color:var(--r)}
+.dx{display:block;margin-top:8px;font-size:18px;text-transform:none;letter-spacing:0}.dx input{width:auto}
+.use{flex:1 1 100%;font:10px var(--pf);padding:14px;background:#2b210f}.use.on{background:var(--g);color:#000}
+#tabs button{font:8px/1.3 var(--pf);padding:12px 0;border:2px solid transparent}#tabs button.on{border-color:var(--g);background:#1b140a;color:var(--g)}
+.an .slot{animation:up .35s both}.an .slot:nth-child(4n){animation-delay:.06s}.an .slot:nth-child(4n+1){animation-delay:.12s}.an .slot:nth-child(4n+2){animation-delay:.18s}
+/* ===== MÓVIL ===== */
+html,body{overflow-x:hidden;max-width:100%}*{min-width:0}
+body{padding:12px 10px 120px;margin:0 auto}
+input,select{max-width:100%}
+.hud{grid-template-columns:minmax(0,1fr) minmax(0,1.35fr)}
+@media(max-width:520px){.hud{grid-template-columns:minmax(0,1fr)}.sg span{width:64px;font-size:12px}.sg em{width:34px;font-size:13px}.ecg svg{height:44px}.row{gap:6px}.pn{padding:10px}.hd{gap:8px}.det{bottom:calc(64px + env(safe-area-inset-bottom,0px))}}
+/* ===== DAY-Z ===== */
+:root{--pf:"Saira Stencil One",Impact,sans-serif;--vf:"Share Tech Mono","Courier New",monospace}
+body{font:15px/1.35 var(--vf);background:radial-gradient(120% 50% at 50% 0,#3a3f2a55,transparent),#0b0c09;color:#c9c8b6}
+body:after{background:radial-gradient(120% 90% at 50% 50%,#0000 55%,#000c)}
+.pn,.hud{background:#13150ed9;border:1px solid #4a4d3c;border-top:2px solid #747858;box-shadow:inset 0 0 0 1px #000,0 4px 14px #000a}
+h1,h2,.cn b,.pop b,.k b,.dt h3,.ih,.cat,#tabs button,.use,.row label,.sb{font-family:var(--pf)!important;letter-spacing:1px}
+h1{font-size:28px;color:#d8d6c0;text-shadow:2px 2px #000}.sb{font-size:10px}h2{font-size:13px}.ih,.cat{font-size:12px}.row label{font-size:11px}
+#tabs button{font-size:10px}.use{font-size:13px}.dt h3{font-size:14px}.k b{font-size:20px}.cn b,.pop b{font-size:11px}
+input,select,button{font-family:var(--vf);font-size:16px;background:#1a1c14;border:1px solid #4a4d3c;color:#d8d6c0}
+.slot{background:#1b1d16;border:1px solid #474a3a;box-shadow:inset 0 0 0 1px #000}
+.slot i{font-family:var(--vf);font-size:12px}
+.tick,.cn{background:#1a1c14;border:1px solid #4a4d3c;border-left:3px solid var(--g)}
+/* ===== MOCHILA ===== */
+.lt{display:flex;gap:6px;flex-wrap:wrap;margin:6px 0 10px}.lt button{flex:1;padding:9px 4px;font:13px var(--pf)}.lt button.on{background:var(--g);color:#000}
+.pk{position:relative;width:100%;border:2px solid #5b5e48;background-color:#10120c;background-image:linear-gradient(90deg,#ffffff1c 1px,transparent 1px),linear-gradient(#ffffff1c 1px,transparent 1px);background-size:20% calc(100%/var(--R));touch-action:pan-y}
+.pc{position:absolute;padding:5%;background:#2c3022;border:1px solid #8a8e70;box-shadow:inset 0 0 0 1px #000;touch-action:none;cursor:grab;user-select:none;-webkit-user-select:none}
+.pc svg,.tp svg{width:100%;height:100%;display:block;image-rendering:pixelated}
+.pc i,.tp i{position:absolute;right:3px;bottom:1px;font:normal 12px var(--vf);color:#fff;text-shadow:1px 1px #000}
+.pc.sel,.tp.sel{outline:2px solid var(--g);z-index:2}
+.gh{position:fixed;z-index:99;pointer-events:none;opacity:.85}
+.hl{position:absolute;pointer-events:none;z-index:1}.hl.ok{background:#4fe04f44;border:2px solid #4fe04f}.hl.no{background:#ff3b3044;border:2px solid #ff3b30}
+.tray{display:flex;flex-wrap:wrap;gap:8px;align-items:flex-start;min-height:48px}
+.tp{position:relative;padding:3px;background:#2c3022;border:1px solid #8a8e70;touch-action:none;cursor:grab;user-select:none;-webkit-user-select:none}
+.pa{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}.pa button{flex:1;padding:9px 6px;font:12px var(--pf)}
+/* ===== DAY-Z v2 ===== */
+body{background:radial-gradient(circle at 105% -5%,#6a100b66,transparent 38%),radial-gradient(120% 50% at 50% 0,#3a3f2a55,transparent),#0a0b08}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:49;opacity:.18;mix-blend-mode:overlay;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E")}
+.pn{background:linear-gradient(#22241bd9,#0f100ae6)}.pn:not(.det){position:relative}
+.pn:not(.det):after{content:"";position:absolute;inset:3px;pointer-events:none;background:linear-gradient(var(--g),var(--g)) 0 0/10px 2px,linear-gradient(var(--g),var(--g)) 0 0/2px 10px,linear-gradient(var(--g),var(--g)) 100% 100%/10px 2px,linear-gradient(var(--g),var(--g)) 100% 100%/2px 10px;background-repeat:no-repeat;opacity:.7}
+h1{color:#d9d7c2;border-bottom:3px solid #8f2f26;padding-bottom:4px;display:inline-block}
+.slot,.pc,.tp{background:linear-gradient(#4a4c40aa,#262820cc);border:1px solid #a3a38f66}
+.slot.on{border-color:#a3a38faa}.pc svg,.tp svg,.slot.on svg,.big svg{filter:drop-shadow(1px 2px 0 #000)}
+.ih,.cat{color:#c9a24a;border-bottom:1px solid #4a4d3c;padding-bottom:4px}
+.ecg{border-color:#4a4d3c}#mu{margin-left:auto}#mu+#gd{margin-left:0}
+/* ===== JUEGO ===== */
+.gmh{display:flex;gap:10px;align-items:center;flex-wrap:wrap;background:#0d0e0acc;border:1px solid #4a4d3c;border-left:4px solid var(--g);padding:8px 10px;margin:8px 0}
+.lv{font:24px var(--pf);color:var(--g);text-shadow:2px 2px #000;flex:none}
+.xb{flex:1 1 140px}.xb small{display:block;font:11px var(--pf);color:#c9a24a;letter-spacing:1px}.xb .bar{height:10px;margin:4px 0 0;border:1px solid #000}
+.ms{flex:1 1 100%;font-size:13px;color:#d9d7c2;background:#1a1c14;padding:7px 8px;border:1px dashed #8f2f26;cursor:pointer}.ms b{color:#e0524a;font:11px var(--pf);letter-spacing:1px}
+#ach{position:fixed;left:10px;right:10px;top:calc(env(safe-area-inset-top,0px) + 8px);max-width:420px;margin:auto;z-index:60;background:#14160f;border:2px solid #d4a63a;box-shadow:0 0 24px #d4a63a66;padding:10px 12px;transform:translateY(-220%);transition:transform .4s cubic-bezier(.2,.8,.2,1);pointer-events:none}#ach.on{transform:none}
+#ach b{display:block;font:11px var(--pf);color:#d4a63a;letter-spacing:2px}#ach span{font:17px var(--pf);color:#fff}
+[data-r=he]{border-bottom:3px solid #d4a63a!important;box-shadow:inset 0 -16px 14px -14px #d4a63a99}[data-r=e]{border-bottom:3px solid #5fa05f!important}[data-r=h]{border-bottom:3px solid #5f8fb0!important}
+.tr{display:flex;gap:10px;padding:8px 0;border-bottom:1px solid #3a3d30;opacity:.4}.tr.u{opacity:1}.tr b{display:block;font:13px var(--pf);color:#d4a63a}.tr span{font-size:13px}.tr em{font-style:normal;font-size:22px}
+#tro{margin-left:auto}#tro+#mu{margin-left:0}
+html.lock,html.lock body{touch-action:none;overscroll-behavior:none;-webkit-user-select:none;user-select:none}
+.pc,.tp,.slot{-webkit-touch-callout:none;-webkit-user-select:none;user-select:none}
+.pk{max-width:360px;margin:0 auto}
+.slot.pt{border-color:#d4a63a}.slot.pt svg{filter:drop-shadow(1px 2px 0 #000);opacity:.8}.slot.pt i{color:#d4a63a}.slot i{font-size:11px}
+.qc{flex:1 1 100%;display:flex;gap:8px;align-items:center;flex-wrap:wrap}.qr{display:flex;gap:6px;flex:1 1 auto;justify-content:flex-end}.qr input{width:72px;text-align:center}.qr button{padding:10px 14px;font:16px var(--pf)}
+.stt{font:11px var(--pf);padding:5px 8px;border:1px solid #4a4d3c;color:#c9c8b6}.stt.on{color:#000;background:var(--g);border-color:var(--g)}.stt.pt{color:#d4a63a;border-color:#d4a63a}
+.dt .bd{color:#d4a63a;border-color:#d4a63a}
+
+/* ===== POPUP DETALLE ===== */
+#dlg{position:fixed;inset:0;z-index:35;background:#000c;display:flex;align-items:center;justify-content:center;padding:16px calc(16px + env(safe-area-inset-right,0px)) calc(16px + env(safe-area-inset-bottom,0px)) 16px;opacity:0;pointer-events:none;transition:opacity .18s}
+#dlg.on{opacity:1;pointer-events:auto}
+#dlg .det{position:relative;bottom:auto;width:100%;max-width:440px;max-height:calc(100vh - 32px);overflow-y:auto;margin:0;padding:16px;background:#14160f;border:1px solid #747858;border-top:2px solid var(--g);box-shadow:0 12px 40px #000;transform:scale(.94) translateY(10px);transition:transform .2s cubic-bezier(.2,.8,.2,1)}
+#dlg.on .det{transform:none}
+#dlg .det .dc{position:absolute;top:6px;right:6px;padding:4px 10px;font-size:16px;line-height:1;z-index:2}
+#dlg .det .dt{padding-right:34px}
+#dlg .qc,#dlg .use{flex:1 1 100%}
+
+/* ===== TEMA ZOMBI ===== */
+body[data-sc=A]{--g:#d4a63a;--a:#f0cf7a}body[data-sc=N]{--g:#d0683a;--a:#f0a77a}body[data-sc=X]{--g:#7fae6a;--a:#b8d9a6}body[data-sc=Z]{--g:#d9534f;--a:#f09a96}
+body{background:radial-gradient(circle at 105% -5%,#8a0f0a77,transparent 42%),radial-gradient(90% 40% at 0 100%,#1d2a1666,transparent),#080908}
+h1{color:#e8e3cf;border-bottom:3px solid #b3261e;letter-spacing:4px}
+.tick{border-left-color:#b3261e}
+.gmh{border-left-color:#b3261e}
+
+/* ===== MANUAL DE CAMPO (papel, tinta y sellos) ===== */
+:root{--pf:"American Typewriter","Courier New",Courier,monospace;--vf:Georgia,"Times New Roman",serif;--bg:#e3d8b8;--pn:#efe6cd;--ln:#1f1a1440;--t:#1f1a14;--m:#6b5f4c;--r:#9e1c14;--ink:#1f1a14;--paper:#f3ead0;color-scheme:light}
+body[data-sc=A]{--g:#9e1c14;--a:#7a5c12}body[data-sc=N]{--g:#1f4a6b;--a:#7a5c12}body[data-sc=X]{--g:#3d5a2a;--a:#7a5c12}body[data-sc=Z]{--g:#7a1f3d;--a:#7a5c12}
+body{font:18px/1.35 var(--vf);color:var(--ink);padding:14px 12px 40px;background:radial-gradient(circle at 86% 12%,#0000 0 44px,#6b3f1a38 45px 49px,#0000 50px),radial-gradient(60% 40% at 92% 6%,#8a5a2b30,#0000 70%),radial-gradient(70% 50% at 6% 96%,#8a5a2b2e,#0000 70%),linear-gradient(#e7ddc0,#dccfa9)}
+body:before{opacity:.3;mix-blend-mode:multiply}
+body:after{background:radial-gradient(120% 90% at 50% 50%,#0000 60%,#3b240e55)}
+.hd{position:relative;padding-top:16px;border-bottom:2px solid var(--ink);padding-bottom:10px}
+.hd:before{content:"ALTO SECRETO · USO DE CAMPO";position:absolute;top:0;left:0;font:10px var(--pf);letter-spacing:3px;color:var(--r)}
+h1{font-size:30px;color:var(--ink);text-shadow:none;border-bottom:4px double var(--r);letter-spacing:3px}
+.sb{font:12px var(--pf);color:var(--m);letter-spacing:.5px;text-transform:none}
+.emb{filter:contrast(1.1)}.emb svg{image-rendering:auto}
+.tick,.pn,.hud,.cn,.gmh,.k,.pop,.det{color:var(--ink)}
+.tick{background:#e0d4ae;border:0;border-top:1px dashed var(--ink);border-bottom:1px dashed var(--ink);font:italic 16px var(--vf);color:var(--ink)}
+.pn,.hud{background:var(--paper);border:1.5px solid var(--ink);border-radius:2px;box-shadow:3px 4px 0 #1f1a1426}
+.pn:not(.det):after{display:none}
+.pn,.hud,.cn,.k,.slot,.tp,.pc,.sh,.pop{backdrop-filter:none}
+h2,.ih,.cat,.cn b,.pop b,.k b,.dt h3{color:var(--r)}
+h2{font-size:14px;letter-spacing:1px;border-bottom:1px solid var(--ink);padding-bottom:3px}
+.ih,.cat{border-bottom:1px solid var(--ink)}
+.row label{color:var(--m)}
+input,select,button{background:#f6eed6;color:var(--ink);border:1px solid #1f1a1488;border-radius:2px;font-family:var(--vf);font-size:17px}
+button{font-family:var(--pf);font-size:13px;background:#e0d4ae;box-shadow:1px 2px 0 #1f1a1433}
+button:active{transform:translate(1px,2px);box-shadow:none}
+#tabs{position:static;display:flex;gap:3px;padding:0;margin-top:10px;background:none;border:0;border-bottom:2px solid var(--ink);backdrop-filter:none}
+#tabs button{flex:1;font:12px var(--pf);padding:9px 0 7px;margin-bottom:-2px;background:#cdbf97;color:var(--ink);border:1.5px solid var(--ink);border-bottom:0;border-radius:6px 6px 0 0;box-shadow:none;transition:transform .15s}
+#tabs button.on{background:var(--paper);color:var(--r);transform:translateY(-4px);padding-top:13px}
+.gmh{background:var(--paper);border:1.5px solid var(--ink);border-left:5px solid var(--r)}
+.lv{color:var(--r);text-shadow:none}.xb small{color:var(--a)}.xb .bar{border-color:var(--ink)}
+.ms{background:#f1df7c;border:0;color:#2a2410;font:15px/1.3 var(--pf);transform:rotate(-.6deg);box-shadow:2px 3px 6px #0004}.ms b{color:var(--r)}
+.bar{background:#cdbf97;border:1px solid var(--ink)}
+.cn{background:var(--paper);border:1.5px solid var(--ink);border-left:5px solid var(--r);animation:none}
+.cn b{display:inline-block;border:2px solid var(--r);padding:1px 8px;transform:rotate(-2deg);margin-bottom:8px;font-size:12px}.cn span{color:var(--ink);font-size:18px}
+.hud{padding:10px}.ecg{background:#efe6cd;border:1px solid var(--ink)}.ecg b{font-size:11px}
+.sg span{color:var(--m);font-size:15px}.sgb u{background:#cdbf97}.sgb u.f{background:var(--g)}.sg em{font:13px var(--pf)}
+.slot{background:#ece2c6;border:1.5px solid var(--ink);box-shadow:1px 2px 0 #1f1a1433}
+.slot:nth-child(odd){transform:rotate(-.7deg)}.slot:nth-child(3n){transform:rotate(.8deg)}
+.slot svg{filter:grayscale(1) contrast(.6) brightness(1.1);opacity:.32}
+.slot.on svg,.slot.pt svg,.big.on svg{filter:none;opacity:1}
+.slot i{color:var(--m)}.slot.on i{color:var(--r)}.slot.pt{border-color:var(--a)}.slot.pt i{color:var(--a)}
+.slot.on:before,.slot.pt:before{position:absolute;top:1px;left:5px;font:bold 17px var(--pf);color:var(--r)}.slot.on:before{content:"✓"}.slot.pt:before{content:"½";color:var(--a)}
+.slot.sel{animation:none;border-color:var(--r);outline:3px solid var(--r);outline-offset:1px;border-radius:40% 55% 45% 50%/55% 45% 55% 45%}
+.big{background:#ece2c6;border:1.5px solid var(--ink)}.big svg{opacity:.4;filter:grayscale(1)}
+.det{background:var(--paper);bottom:12px}.dt h3{font-size:15px}.dt p{color:var(--m)}.dt .bd{color:var(--r);border-color:var(--r)}
+.use{background:#cdbf97}.use.on,.lt button.on,.stt.on{background:var(--g);color:#f6eed7}
+.stt{color:var(--ink);border-color:var(--ink)}.stt.pt{color:var(--a);border-color:var(--a)}
+.j{background:#1f1a140a;border-left-color:var(--r);color:var(--m);font-style:italic}
+.bd{border-color:var(--ink);color:var(--ink)}.bd.x{border-color:var(--m);color:var(--m)}
+.k{background:#ece2c6;border:1px solid var(--ink)}.k b{font-size:20px}
+.pk{border:2px solid var(--ink);background-color:#f1e8cf;background-image:linear-gradient(90deg,#1f1a1426 1px,transparent 1px),linear-gradient(#1f1a1426 1px,transparent 1px)}
+.pc,.tp{background:#e2d6b0;border:1.5px solid var(--ink);box-shadow:1px 2px 0 #1f1a1433}
+.pc svg,.tp svg,.slot.on svg{filter:none}.pc i,.tp i{color:var(--ink);text-shadow:none}
+.pc.sel,.tp.sel{outline-color:var(--r)}
+.it{border-bottom:1px dashed #1f1a1455}
+.pop,.sh{background:#f3ead0f7;color:var(--ink);border:1.5px solid var(--ink);border-left-width:5px}.sh{border-top:4px solid var(--r)}.sh a{color:var(--r)}.pop b{color:var(--r)}
+.tr b{color:var(--a)}.tr span{color:var(--ink)}
+#dlg{background:#2a1c0ccc}#dlg .det{background:repeating-linear-gradient(#0000 0 27px,#3f6fa633 27px 28px),var(--paper);border:1.5px solid var(--ink);border-top:4px solid var(--r);box-shadow:4px 6px 0 #0006}
+[data-r=he]{border-bottom-color:#9e1c14!important;box-shadow:none!important}[data-r=e]{border-bottom-color:#3d5a2a!important}[data-r=h]{border-bottom-color:#1f4a6b!important}
+@media(max-width:520px){.det{bottom:10px}}
+
+.zr{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}.zr button{flex:1;min-width:90px}
+#prt{display:none}
+@media print{body>*:not(#prt){display:none!important}body:before,body:after{display:none}body{background:#fff}#prt{display:block;color:#000;font:14px/1.5 serif}#prt pre{font:14px/1.6 "Courier New",monospace;white-space:pre-wrap}}
+
+/* ===== AJUSTES MÓVIL ===== */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%;touch-action:manipulation}
+body,button,input,select,label,.slot,.pc,.tp{touch-action:manipulation}
+button{-webkit-user-select:none;user-select:none}
+input,select,textarea{font-size:16px!important}
+.hd{flex-wrap:wrap;gap:8px}
+.hd>div:not(.emb){flex:1 1 150px;min-width:0}
+.hd .gb{margin-left:0;padding:8px 10px;font-size:18px;flex:none}
+#tro{margin-left:auto}
+h1{font-size:clamp(20px,7vw,30px);letter-spacing:2px;overflow-wrap:anywhere}
+.sg>div{align-items:flex-start;flex-wrap:nowrap}
+.sg span{width:auto!important;flex:0 0 40%;font-size:14px!important;line-height:1.15;overflow-wrap:anywhere;padding-top:1px}
+.sgb{margin-top:5px}
+.sg em{flex:0 0 38px}
+#tabs button{font-size:11px;letter-spacing:0;padding:9px 0 7px;overflow:hidden;white-space:nowrap}
+@media(max-width:400px){#tabs button{font-size:10px}.row label{font-size:10px;letter-spacing:.5px}}
+.dt h3,.ms,.cn span,.it .nm,.j{overflow-wrap:anywhere}
+.ih span{min-width:0}
+.qr{flex-wrap:wrap}.qr input{width:64px}.qr button{padding:10px 12px;min-width:44px;min-height:44px}
+.slot,.pc,.tp,.use{min-height:44px}
+
+@media(max-width:430px){.hd{flex-wrap:nowrap;gap:6px}.emb{width:38px;height:38px}.hd .gb{padding:4px 0;font-size:16px;width:34px;height:34px;display:grid;place-items:center;line-height:1}h1{font-size:clamp(19px,6vw,24px);letter-spacing:1px}.sb{font-size:11px}.hd>div:not(.emb){flex:1 1 0}}
+
+/* ===== A CONSEGUIR + DESPENSA ===== */
+#tabs button{position:relative;overflow:visible;white-space:normal;line-height:1.05;word-break:keep-all;padding:8px 1px 6px;display:grid;place-items:center}
+@media(max-width:430px){#tabs button{font-size:9.5px}}
+#tabs .bg{position:absolute;top:-9px;right:-1px;background:var(--r);color:#f6eed7;font:10px/1 var(--pf);border-radius:9px;padding:2px 5px;box-shadow:1px 1px 0 #0004}
+.cg .it{flex-wrap:wrap;align-items:center}.cg .qr{flex:0 0 auto}.cg .qr button{min-height:40px;padding:8px 10px}
+.ok{color:#2f5d2a}.zlog{font-size:15px;color:var(--m)}
+
+/* ===== IDIOMAS + NOCTURNO ===== */
+.lgr{display:flex;gap:4px;margin:8px 0 2px}.lgr button{flex:1;padding:6px 2px;font:12px var(--pf);min-height:34px}.lgr button.on{background:var(--g);color:#f6eed7}
+body.night{--paper:#1c1a15;--ink:#e8e0c8;--m:#a39b86;--r:#e5604f;color-scheme:dark;background:radial-gradient(60% 40% at 92% 6%,#8a2b1a30,#0000 70%),linear-gradient(#15130f,#0c0b08)}
+body.night[data-sc]{--a:#d9b25a}body.night[data-sc=A]{--g:#e0594e}body.night[data-sc=N]{--g:#5b9fd0}body.night[data-sc=X]{--g:#7fb465}body.night[data-sc=Z]{--g:#c97aa0}
+body.night .tick,body.night .slot,body.night .big,body.night .k,body.night .ecg,body.night .pc,body.night .tp,body.night input,body.night select,body.night button,body.night .use{background:#2a261c}
+body.night .use.on{background:var(--g)}body.night #tabs button{background:#24211a}body.night #tabs button.on{background:var(--paper)}
+body.night .bar{background:#2f2b20}body.night .sgb u{background:#38331f}
+body.night .pk{background-color:#16140f;background-image:linear-gradient(90deg,#ffffff1c 1px,transparent 1px),linear-gradient(#ffffff1c 1px,transparent 1px)}
+body.night .pop,body.night .sh{background:#1c1a15f7}body.night .ok{color:#7fc472}body.night .hd:before{color:var(--r)}
+body.night .slot svg{filter:grayscale(1) brightness(.6);opacity:.4}body.night .slot.on svg,body.night .slot.pt svg,body.night .big.on svg{filter:none;opacity:1}
+.trc{font:12px var(--pf);color:var(--g);margin:16px 0 2px;letter-spacing:2px}
+#dlg .qc{margin-top:4px}
+#tabs{flex-wrap:wrap}@media(max-width:600px){#tabs{gap:3px}#tabs button{flex:1 1 calc(25% - 3px);min-width:0;font-size:10px!important;letter-spacing:0!important;padding:9px 1px 7px;margin-bottom:0;white-space:nowrap;overflow:hidden}#tabs button.on{transform:none;padding-top:9px}}
+</style></head><body><noscript>Esta aplicación necesita JavaScript.</noscript>
+<header class="hd"><div class="emb" id="emb"></div><div><h1>MI REFUGIO</h1><div class="sb">Archivo de campo · Cómo sobrevivir a los muertos vivientes</div></div><button id="gd" class="gb" aria-label="Manual">📘</button></header>
+<div class="tick" id="tk"></div>
+<div class="pn"><div class="row">
+<label>Supervivientes<input id="p" type="number" min="1" max="20" style="width:70px"></label>
+<label>Mascotas<input id="pets" type="number" min="0" max="10" style="width:70px"></label>
+<label>Resistencia<select id="days"><option value="3">3 días</option><option value="7">7 días</option><option value="14">14 días</option><option value="30">30 días</option></select></label>
+<label>Plan<select id="sc"><option value="A">🏚 Atrincherado</option><option value="N">🏃 En fuga</option><option value="X">🏕 Refugio remoto</option><option value="Z">🏰 Fortaleza</option></select></label>
+</div></div>
+<div class="hud" id="hud"></div><div style="display:none"><div class="rings" id="rings"></div></div>
+<div class="row" id="tabs"></div>
+<div id="v"></div>
+<div class="pn"><small>Obra de ficción y juego de preparación ambientado en el género zombi. Los ítems MAN son temas del manual de campo; los EXTRA, sentido común. En una emergencia real llama al 112 y sigue a tu protección civil. Esta app no está afiliada ni respaldada por ningún autor, editorial o franquicia.</small></div>
+<div id="dlg"></div><div id="pop" class="pop"></div><div id="sheet" class="sheet"></div>
+<script>
+const I=`Agua potable|L|pd|3|he|ANXZ|MAN|Antes que la comida: sin agua no pasas de unos pocos días.
+Comida enlatada o que no necesita cocinar|raciones|pd|3|he|ANXZ|MAN|Cocinar huele y hace humo: ambos atraen.
+Pastillas potabilizadoras|ud|pp|10|he|ANXZ|MAN|
+Filtro de agua portátil|ud|hh|1|e|NXZ|MAN|
+Machete|ud|pp|1|he|ANXZ|MAN|Herramienta de corte. Cumple siempre la normativa local sobre su porte y uso.
+Palanca (pie de cabra)|ud|hh|1|he|ANXZ|MAN|Abre puertas y sirve de defensa.
+Cuchillo de monte|ud|pp|1|he|NXZ|-|
+Ropa gruesa de manga larga|set|pp|1|he|ANXZ|MAN|Sin bufandas ni cordones sueltos que se puedan agarrar.
+Guantes de trabajo|par|pp|1|he|ANXZ|MAN|
+Botas robustas|par|pp|1|e|NXZ|MAN|Calzado ya domado: vas a andar mucho.
+Gafas de protección|ud|pp|1|he|ANXZ|-|
+Mascarillas FFP2|ud|pp|6|he|ANXZ|MAN|Olor, polvo y edificios en ruinas.
+Linterna o frontal|ud|pp|1|he|ANXZ|MAN|Mejor luz roja o tenue: la luz atrae.
+Pilas de repuesto|pack|hh|3|he|ANXZ|-|
+Radio de pilas o manivela|ud|hh|1|he|ANXZ|MAN|Para saber si todavía emite alguien.
+Walkie-talkies|par|hh|1|e|NXZ|-|
+Prismáticos|ud|hh|1|he|NXZ|MAN|Observa antes de acercarte.
+Mapa de papel y brújula|set|hh|1|e|NXZ|MAN|Marca dos rutas de salida desde cada punto.
+Botiquín|ud|hh|1|he|ANXZ|MAN|
+Medicación habitual|días|hd|1|he|ANXZ|MAN|
+Manta o saco de dormir|ud|pp|1|he|ANXZ|-|
+Tienda de campaña|ud|hh|1|e|NX|-|
+Mechero y cerillas|ud|hh|3|he|ANXZ|-|
+Cinta americana|rollo|hh|2|he|ANXZ|-|Refuerzos, vendajes y tapar ventanas.
+Cuerda resistente|m|hh|20|he|NXZ|MAN|
+Tablones, clavos y martillo|set|hh|1|h|AZ|MAN|Para reforzar puertas y ventanas.
+Cadena y candados|set|hh|1|h|AZ|-|
+Bolsas de basura|ud|hd|1|h|ANXZ|-|
+Hornillo y cartuchos de gas|set|hh|1|he|NXZ|-|
+Objetos de trueque (pilas, sal, medicinas)|set|pp|1|he|ANXZ|MAN|El dinero pierde valor: lleva cosas útiles para intercambiar.
+Documentos y copias|set|pp|1|e|NXZ|-|
+Plan de grupo (punto de encuentro y señales)|ud|hh|1|he|ANXZ|MAN|Todos deben conocerlo antes de que haga falta.
+Silbato|ud|pp|1|e|NXZ|-|Solo para pedir ayuda: el ruido atrae.
+Libro de supervivencia|ud|hh|1|he|ANXZ|-|
+Comida y agua para mascotas|días|pt|1|he|ANXZ|-|
+Generador y combustible|ud|hh|1|h|XZ|-|
+Semillas y herramientas de huerto|set|hh|1|h|XZ|MAN|Para el largo plazo: cultiva donde vives.
+Depósito de agua de lluvia|ud|hh|1|h|XZ|-|
+Sedal y anzuelos|set|hh|1|h|XZ|-|
+Hacha de campo|ud|pp|1|he|ANXZ|MAN|Herramienta de corte. Cumple siempre la normativa local sobre su porte y uso.
+Pala de zapador (trinchera)|ud|hh|1|he|ANXZ|-|Cava, despeja el paso y sirve para improvisar un refugio.`.split("\n").map(l=>{const a=l.split("|");return{n:a[0],u:a[1],t:a[2],k:+a[3],b:a[4],s:a[5],r:a[6],j:a[7]}});
+const SC={A:"🏚 Atrincherado",N:"🏃 En fuga",X:"🏕 Refugio remoto",Z:"🏰 Fortaleza"};
+let S={p:2,pets:0,days:7,sc:"A",chk:{},food:[],water:0,tab:"h"};
+try{Object.assign(S,JSON.parse(localStorage.getItem("tps")||"{}"))}catch(e){}
+let DB=null,cT=0,cL=0;
+const sv=()=>{try{const s=JSON.stringify(S,(k,v)=>k=="ts"?void 0:v);if(s!==sv.l){sv.l=s;S.ts=Date.now()}localStorage.setItem("tps",JSON.stringify(S))}catch(e){}cloud()};
+function cloud(){if(!DB||!S.ts||S.ts==cL)return;clearTimeout(cT);cT=setTimeout(()=>{const t=S.ts;DB.set({d:JSON.stringify(S),ts:t}).then(()=>{cL=t}).catch(()=>{})},1500)}
+const FD=[["Arroz",360,0],["Pasta",355,0],["Lentejas secas",340,0],["Garbanzos secos",340,0],["Alubias secas",335,0],["Legumbres cocidas",110,0],["Atún en lata",130,0],["Sardinas en lata",200,0],["Conserva de verdura",30,0],["Tomate frito",80,0],["Harina",350,0],["Azúcar",400,0],["Aceite de oliva",884,0],["Galletas",450,0],["Frutos secos",600,0],["Cereales",380,0],["Avena",370,0],["Pan de molde",265,0],["Leche UHT",46,0],["Chocolate",540,0],["Miel",300,0],["Crema de cacahuete",590,0],["Barritas energéticas",400,40],["Sopa deshidratada",350,0],["Cuscús",360,0],["Patatas",77,0],["Queso curado",400,0],["Jamón curado",240,0],["Mermelada",250,0],["Carne en conserva",250,0],["Fruta en almíbar",80,0],["Huevos",143,60],["Manzana",52,180],["Plátano",89,120]];
+const isW=it=>it.n=="Agua potable";
+const iv=i=>isW(I[i])?(+S.water||0):((S.inv&&S.inv[i])||0);
+const setIv=(i,v)=>{v=Math.round(v*100)/100;if(isW(I[i]))S.water=v;else S.inv[i]=v};
+const wl=i=>{const v=iv(i),o=[];for(let n=0;v-1.5*n>1e-9;n++)o.push(Math.min(1.5,+(v-1.5*n).toFixed(2)));return o};
+if(!S.inv){S.inv={};pairs(()=>true).forEach(x=>{if(S.chk[x.k]){if(isW(x.it)){if(!S.water)S.water=qty(x.it,x.b)}else S.inv[x.i]=Math.max(S.inv[x.i]||0,qty(x.it,x.b))}})}
+const $=i=>document.getElementById(i);
+function qty(it,b){const d=b=="e"?3:S.days,P=S.p,t=it.t,k=it.k;const q=t=="pd"?k*P*d:t=="pp"?k*P:t=="hh"?k:t=="hd"?k*d:t=="pt"?k*S.pets*d:k*S.pets;return Math.ceil(q-1e-9)}
+function pairs(f){const o=[];I.forEach((it,i)=>[...it.b].forEach(b=>{if(qty(it,b)>0&&f(it))o.push({it,i,b,k:i+b})}));return o}
+const STK=it=>/mascarilla|mechero/i.test(it.n),LIM=10;
+const UNIT=it=>!isW(it)&&!/^(m|días|L)$/.test(it.u)&&!/pastilla/i.test(it.n);
+const frc=x=>{const need=qty(x.it,x.b);if(!need)return 0;if(x.b=="h")return Math.min(1,iv(x.i)/need);const pl=(S.pk&&S.pk.pl)||{};if(isW(x.it)){let s=0;wl(x.i).forEach((l,n)=>{if(pl[x.k+"_"+n])s+=l});return Math.min(1,s/need)}const nn=S.pk&&S.pk.n&&S.pk.n[x.k],c=nn===undefined?iv(x.i):Math.min(nn,iv(x.i));if(UNIT(x.it)){let s=0;const st=(S.pk&&S.pk.st)||{};for(const k in pl)if(k.indexOf(x.k+"~")==0)s+=st[k]||1;return Math.min(1,Math.min(s,Math.max(1,Math.floor(c+1e-9)))/need)}return pl[x.k]?Math.min(1,c/need):0};
+function sync(){pairs(()=>true).forEach(x=>{S.chk[x.k]=frc(x)>=1})}
+const pct=(f,bag)=>{const a=pairs(f).filter(x=>!bag||x.b==bag);return a.length?Math.round(100*a.reduce((s,x)=>s+frc(x),0)/a.length):0};
+const col=p=>p<34?"var(--r)":p<67?"var(--a)":"var(--g)";
+const ring=(l,p)=>`<div class="rg"><div class="ring" style="--p:${p};--c:${col(p)}"><b>${p}%</b></div>${l}</div>`;
+function food(){const kc=S.food.reduce((s,f)=>s+f.q*f.k,0);return{kc,d:kc/(2000*S.p),w:S.water/(3*S.p)}}
+function stt(k){S.st=S.st||{};S.st[k]=(S.st[k]||0)+1}
+function render(){
+document.body.dataset.sc=S.sc;$("p").value=S.p;$("pets").value=S.pets;$("days").value=S.days;$("sc").value=S.sc;
+const RG=[["TODO",""],...Object.entries(SC).map(([c,l])=>[l,c])];if(!$("rings").children.length)$("rings").innerHTML=RG.map(r=>ring(r[0],0)).join("");setTimeout(()=>[...$("rings").children].forEach((el,i)=>{const p=pct(x=>x.s.includes(RG[i][1])),rn=el.firstChild;rn.style.setProperty("--p",p);rn.style.setProperty("--c",col(p));rn.firstChild.textContent=p+"%"}),40);
+$("tabs").innerHTML=[["h","ALMACÉN"],["e","MOCHILA"],["b","BOTIQUÍN"],["f","DESPENSA"],["g","A CONSEGUIR"],["k","FICHA"],["pg","PLAN"],["mn","MANUAL"]].map(t=>`<button data-t="${t[0]}" class="${S.tab==t[0]?"on":""}">${t[1]}</button>`).join("");
+const v=$("v");if(S.tab=="h"||S.tab=="e"||S.tab=="b"){v.innerHTML=(S.tab=="b"?"":cn())+grid(S.tab);sv();return}
+if(S.tab=="h"||S.tab=="e"){const L=pairs(x=>x.s.includes(S.sc)&&x.b.includes(S.tab)).filter(x=>x.b==S.tab);const p=pct(x=>x.s.includes(S.sc),S.tab);
+v.innerHTML=cn()+`<div class="pn"><h2>${S.tab=="h"?"MOCHILA DE CASA · "+S.days+" días":"MOCHILA DE EVACUACIÓN · 72 h"} · ${SC[S.sc]} · ${p}%</h2><div class="bar"><i style="width:${p}%"></i></div>`+L.map(x=>{const it=x.it,u=S.chk[x.k];return `<label class="it ${u?"d":""}" style="flex-direction:row;color:var(--t);font-size:15px"><input type="checkbox" data-k="${x.k}" ${u?"checked":""}><span><span class="nm">${it.n}</span> <span class="q">× ${qty(it,x.b)} ${it.u}</span><br>${it.r.split(" ").map(r=>r=="-"?'<span class="bd x">EXTRA</span>':`<span class="bd">${r}</span>`).join("")}${it.j?`<span class="j">${it.j}</span>`:""}</span></label>`}).join("")+"</div>"}
+else if(S.tab=="b"){v.innerHTML=cn()+bot()}else if(S.tab=="f"){const f=food();
+v.innerHTML=`<div class="pn"><h2>INVENTARIO DE ALIMENTOS</h2><div class="row"><label>Alimento<input id="fn" list="fdb" placeholder="Arroz, lentejas, atún..." autocomplete="off"></label><datalist id="fdb">${FD.map(f=>`<option value="${f[0]}">`).join("")}</datalist><label>Cantidad<input id="fq" type="number" min="0" step="any" inputmode="decimal" value="1" style="width:80px"></label><label>Unidad<select id="fu">${["kg","g","L","unidad","lata","bote","paquete","botella","caja","bolsa"].map(u=>`<option>${u}</option>`).join("")}</select></label><label id="fgw" style="display:none">Peso por ud (g)<input id="fg" type="number" min="1" value="400" style="width:80px"></label><label>kcal/100 g<input id="fk" type="number" min="0" placeholder="auto" style="width:80px"></label><label>Caduca<input id="fe" type="date"></label><button id="fa">+ Añadir</button></div><small id="fp" style="display:block;margin-top:8px"></small>
+<div class="row" style="margin-top:8px"><label>Litros de agua almacenados<input id="fw" type="number" min="0" value="${S.water}" style="width:90px"></label></div></div>
+<div class="pn"><div class="kp"><div class="k"><b>${f.d.toFixed(1)}</b>días de comida</div><div class="k"><b>${f.w.toFixed(1)}</b>días de agua (3 L)</div><div class="k"><b>${Math.round(f.kc)}</b>kcal totales</div></div></div>
+<div class="pn">`+(S.food.length?S.food.map((x,i)=>`<div class="it"><span style="flex:1">${x.n.replace(/</g,"&lt;")} · ${x.q} ${x.u||"ud"} · ${Math.round(x.q*x.k)} kcal${x.e?" · cad. "+x.e:""}${x.e&&x.e<new Date(Date.now()+864e5*30).toISOString().slice(0,10)?' <b style="color:var(--r)">¡CADUCA PRONTO!</b>':""}</span><button data-fm="${i}">−</button><button data-fp="${i}">+</button><button data-x="${i}">✕</button></div>`).join(""):"<small>Aún no has registrado alimentos.</small>")+"</div>"}
+else{const f=food(),all=pct(()=>true),m=pairs(()=>true).filter(x=>!frc(x)).length,cr=S.food.filter(x=>x.e&&x.e<new Date(Date.now()+864e5*30).toISOString().slice(0,10)).length;
+const R=all<20?"CARNE FRESCA":all<50?"RECLUTA":all<80?"PREPARADO":all<100?"CAZADOR":"AUTOSUFICIENTE";
+v.innerHTML=cn()+`<div class="pn"><h2>RANGO: ${R}</h2><div class="kp"><div class="k"><b>${all}%</b>completado total</div><div class="k"><b>${m}</b>ítems faltantes</div><div class="k"><b>${pairs(()=>true).filter(x=>!S.chk[x.k]&&frc(x)>0).length}</b>ítems parciales</div><div class="k"><b>${Math.min(f.d,f.w).toFixed(1)}</b>días de autonomía real</div><div class="k"><b>${S.p+S.pets}</b>bocas a defender</div><div class="k"><b>${cr}</b>alimentos a punto de caducar</div><div class="k"><b>${bpc()}%</b>botiquín completo</div><div class="k"><b>${bcad()}</b>botiquín caducado o a punto</div><div class="k"><b>${Math.round(S.days*3*S.p)}</b>L de agua objetivo</div></div></div>
+<div class="pn"><h2>% POR AMENAZA Y MOCHILA</h2>`+[["","Todo el equipo"],...Object.entries(SC)].map(([c,l])=>{const a=pct(x=>x.s.includes(c),"h"),b=pct(x=>x.s.includes(c),"e");return `<div>${l}<small> casa ${a}% · evacuación ${b}%</small><div class="bar"><i style="width:${a}%"></i></div><div class="bar"><i style="width:${b}%;background:var(--a)"></i></div></div>`}).join("")+"</div>"}
+sv()}
+document.addEventListener("input",e=>{const i=e.target.id;if(i=="p"||i=="pets"||i=="days"||i=="sc"){S[i]=i=="sc"?e.target.value:Math.max(i=="p"?1:0,+e.target.value||0);render()}if(i=="fw"){S.water=+e.target.value||0;sv()}});
+document.addEventListener("change",e=>{if(e.target.id=="fw"){S.water=+e.target.value||0;render()}if(e.target.dataset.k){S.chk[e.target.dataset.k]=e.target.checked;navigator.vibrate&&navigator.vibrate(15);render()}});
+document.addEventListener("click",e=>{const d=e.target.dataset;if(d.t){S.tab=d.t;render();$("v").classList.add("an");setTimeout(()=>$("v").classList.remove("an"),1200);scrollTo({top:0,behavior:"smooth"})}if(d.x!==undefined){S.food.splice(+d.x,1);render()}});
+const TIPS=["Hay que destruir el cerebro: apunta a la cabeza o no sirve.","Sin agua no hay plan. Almacénala antes que nada.","Evita las ciudades: cuanta más gente, más muertos.","Conoce dos salidas de cada habitación.","Las armas silenciosas atraen menos atención.","Un arma que no se recarga nunca se queda sin munición.","Nunca viajes solo si puedes evitarlo.","Mantén la calma: el pánico mata antes que el virus."];
+const BR={A:["ATRINCHERADO","Quédate en un edificio sólido con pocas entradas. Refuerza puertas y ventanas, ten una salida de emergencia y vigila por turnos. Evita luz y ruido innecesarios."],N:["EN FUGA","Viaja ligero y por rutas secundarias. Prioriza agua, calzado y un mapa. Descansa en lugares altos y con dos salidas, y no te detengas en núcleos urbanos."],X:["REFUGIO REMOTO","Lugares aislados, con agua cercana y buena visibilidad. Controla accesos, almacena para meses y mantén bajo perfil: humo y luz delatan tu posición."],Z:["FORTALEZA","Un asentamiento fijo y defendible, con huerto, agua propia y rotación de guardias. Piensa en años, no en semanas: cultivo, medicina y reparaciones."]};
+function cn(){const b=BR[S.sc];return `<div class="cn"><b>BRIEFING · ${b[0]}</b><span>${b[1]}</span></div>`}
+let ti=0;const tp=()=>{$("tk").innerHTML="<span>CONSEJO · "+TIPS[ti++%TIPS.length]+"</span>"};setInterval(tp,6000);tp();
+S.bk=S.bk||{};S.bx=S.bx||{};S.med=S.med||[];
+const esc=t=>String(t).replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+const bg=r=>r.split(" ").map(x=>x=="-"?'<span class="bd x">EXTRA</span>':`<span class="bd">${x}</span>`).join("");
+const BO=`Curas|Gasas y compresas estériles|ud|hh|10|MAN|0|
+Curas|Tiritas surtidas|ud|pp|10|-|0|
+Curas|Vendas elásticas|ud|hh|2|-|0|
+Curas|Esparadrapo|rollo|hh|1|MAN|0|
+Curas|Torniquete|ud|pp|1|MAN|0|Frena hemorragias graves.
+Curas|Kit de sutura|set|hh|1|-|0|Solo si sabes usarlo.
+Curas|Suero fisiológico|ud|hh|4|-|1|Para lavar heridas y ojos.
+Curas|Antiséptico para heridas|ud|hh|1|-|1|
+Curas|Crema o hidrogel para quemaduras|ud|hh|1|-|1|
+Protección e higiene|Guantes desechables|pares|pp|2|MAN|0|Mejor sin látex.
+Protección e higiene|Gel hidroalcohólico|ud|hh|1|MAN|1|
+Protección e higiene|Toallitas húmedas|pack|hh|1|MAN|0|
+Protección e higiene|Mascarillas|ud|pp|2|-|0|
+Instrumental|Tijeras|ud|hh|1|-|0|
+Instrumental|Pinzas|ud|hh|1|-|0|
+Instrumental|Termómetro|ud|hh|1|-|0|
+Instrumental|Manta térmica|ud|pp|1|-|0|Previene la hipotermia.
+Medicamentos sin receta|Paracetamol u otro analgésico habitual|caja|hh|1|MAN|1|Sigue siempre el prospecto.
+Medicamentos sin receta|Sales de rehidratación oral|sobres|pp|3|-|1|
+Medicamentos sin receta|Antihistamínico|caja|hh|1|-|1|
+Medicamentos sin receta|Antidiarreico|caja|hh|1|-|1|
+Documentación|Copia de recetas e informe médico|set|hh|1|MAN|0|
+Documentación|Alergias, grupo sanguíneo y contactos médicos|ud|hh|1|-|0|
+Documentación|Guía de primeros auxilios|ud|hh|1|MAN|0|Aprende lo básico antes de necesitarlo.
+Específicos|Suministros para bebés o niños (fórmula, pañales, medicación pediátrica)|ud|hh|1|MAN|1|Solo si hay niños. Consulta al pediatra.`.split("\n").map(l=>{const a=l.split("|");return{c:a[0],n:a[1],u:a[2],t:a[3],k:+a[4],r:a[5],x:a[6]=="1",j:a[7]}});
+const dT=()=>new Date().toISOString().slice(0,10),dS=()=>new Date(Date.now()+864e5*30).toISOString().slice(0,10);
+const bpc=()=>Math.round(100*BO.filter((_,i)=>S.bk[i]).length/BO.length);
+const bcad=()=>BO.filter((it,i)=>S.bx[i]&&S.bx[i]<dS()).length+S.med.filter(m=>m.e&&m.e<dS()).length;
+function bot(){const T=dT(),D=dS(),n=BO.length,ok=BO.filter((_,i)=>S.bk[i]).length,p=bpc();let c="";
+let h=`<div class="pn"><h2>BOTIQUÍN · ${S.p} ${S.p>1?"personas":"persona"} · ${p}%</h2><div class="bar"><i style="width:${p}%"></i></div><small>${ok} de ${n} elementos</small>`;
+BO.forEach((it,i)=>{if(it.c!=c){c=it.c;h+=`<h2 style="margin-top:14px">${c}</h2>`}const e=S.bx[i],u=S.bk[i];
+h+=`<div class="it ${u?"d":""}"><label class="bl"><input type="checkbox" data-bk="${i}" ${u?"checked":""}><span><span class="nm">${it.n}</span> <span class="q">× ${qty(it,"h")} ${it.u}</span><br>${bg(it.r)}${it.j?`<span class="j">${it.j}</span>`:""}${e&&e<T?'<span class="j" style="border-color:var(--r);color:var(--r)">CADUCADO</span>':e&&e<D?'<span class="j" style="border-color:var(--a)">Caduca en menos de 30 días</span>':""}</span></label>${it.x?`<input type="date" data-bx="${i}" value="${e||""}" aria-label="Caducidad">`:""}</div>`});
+h+=`</div><div class="pn"><h2>MEDICACIÓN PERSONAL</h2><div class="row"><label>Medicamento<input id="mn"></label><label>Para quién<input id="mw"></label><label>Días de reserva<input id="md" type="number" min="0" value="${S.days}"></label><label>Caduca<input id="me" type="date"></label><button id="ma">+ Añadir</button></div>`;
+h+=S.med.map((m,i)=>`<div class="it"><span style="flex:1"><b>${esc(m.n)}</b>${m.w?" · "+esc(m.w):""}<br><small>${m.d} días de reserva${m.e?" · caduca "+m.e:""}</small>${m.d<S.days?`<span class="j" style="border-color:var(--r);color:var(--r)">Reserva insuficiente: faltan ${S.days-m.d} días para tu autonomía de ${S.days}</span>`:""}${m.e&&m.e<T?'<span class="j" style="border-color:var(--r);color:var(--r)">CADUCADA</span>':""}</span><button data-m="${i}">✕</button></div>`).join("");
+return h+`<small>Consulta a tu médico o farmacéutico qué medicación reservar y cómo conservarla. Sigue siempre el prospecto; en niños, la dosis la indica el pediatra.</small></div>`}
+const SRC={MAN:"Manual de campo",EXTRA:"Buenas prácticas"};
+const TPS={all:[["El virus se contagia por mordisco: cualquier herida debe tratarse y vigilarse.","MAN"],["No pelees si puedes huir. Cada enfrentamiento arriesga una mordedura.","MAN"],["Fija un punto de encuentro y señales acordadas con tu grupo.","MAN"],["Lleva cosas útiles para trueque: el dinero deja de valer.","MAN"],["En la ficción, el ruido atrae a los muertos: prefiere herramientas silenciosas y ligeras.","MAN"]],
+h:[["Refuerza solo un acceso principal y deja una salida de escape discreta.","MAN"],["Almacena agua primero y comida que no necesite cocinar.","MAN"],["Evita luces visibles desde fuera: tapa las ventanas.","MAN"]],
+e:[["Una mochila de huida: agua, calzado, mapa, botiquín y un arma ligera.","MAN"],["Prueba tu mochila: si no puedes correr 1 km con ella, es demasiado pesada.","EXTRA"]],
+b:[["Limpia siempre las heridas con agua y antiséptico y revísalas cada día.","MAN"],["Revisa caducidades cada 6 meses y no mezcles medicación de distintas personas.","EXTRA"]],
+f:[["Rota la despensa: consume lo más antiguo y repón.","EXTRA"],["Planifica a largo plazo: las latas se acaban, un huerto no.","MAN"]],
+k:[["Revisa tu equipo cada mes: el estado importa más que el porcentaje.","EXTRA"]]};
+let pi=0,pt;const hideP=()=>$("pop").classList.remove("on");
+function tip(n){if(S.tips===false&&!n)return;const pool=(TPS[S.tab]||[]).concat(TPS.all);pi=n?pi+1:Math.floor(Math.random()*pool.length);const t=pool[pi%pool.length];
+$("pop").innerHTML=`<b>CONSEJO · ${SRC[t[1]]}</b><span>${t[0]}</span><div class="pb"><button id="pn">Otro consejo</button><button id="px">✕</button></div>`;$("pop").classList.add("on");clearTimeout(pt);pt=setTimeout(hideP,11000)}
+const closeG=()=>$("sheet").classList.remove("on");
+function openG(){const g={};Object.values(TPS).flat().forEach(t=>{(g[t[1]]=g[t[1]]||[]).push(t[0])});
+$("sheet").innerHTML=`<div class="sh"><h2>📘 Manual de campo</h2><small>Resumen de consejos inspirados en el género zombi. Es ficción y juego: para emergencias reales manda tu protección civil.</small>`+Object.keys(SRC).filter(k=>g[k]).map(k=>`<h2 style="margin-top:14px">${SRC[k]}</h2><ul>${g[k].map(x=>`<li>${x}</li>`).join("")}</ul>`).join("")+`<div class="row" style="margin-top:12px"><button id="tt">Consejos emergentes: ${S.tips===false?"DESACTIVADOS":"ACTIVADOS"}</button></div><button id="gc" style="width:100%">Cerrar</button></div>`;$("sheet").classList.add("on")}
+document.addEventListener("change",e=>{const d=e.target.dataset;if(d.bk!==undefined){S.bk[d.bk]=e.target.checked;navigator.vibrate&&navigator.vibrate(15);render()}if(d.bx!==undefined){S.bx[d.bx]=e.target.value;render()}});
+document.addEventListener("click",e=>{const d=e.target.dataset,i=e.target.id;
+if(d.m!==undefined){S.med.splice(+d.m,1);render()}
+if(i=="ma"){const n=$("mn").value.trim();if(n){S.med.push({n,w:$("mw").value.trim(),d:+$("md").value||0,e:$("me").value});render()}}
+if(i=="gd")openG();if(i=="gc"||i=="sheet")closeG();
+if(i=="tt"){S.tips=S.tips===false;sv();openG()}
+if(i=="pn")tip(1);if(i=="px")hideP();
+if(d.t&&S.tips!==false)setTimeout(()=>tip(0),700)});
+setTimeout(()=>tip(0),1800);
+const PAL={k:"#120c05",w:"#efe6cc",g:"#8c9298",b:"#3f7fd0",r:"#c8372d",y:"#e8b83a",n:"#8a5a2b",G:"#4fa04f"};
+const SP={water:"...kk.../..kwwk../..kbbk../.kbbbbk./.kbwbbk./.kbbbbk./.kbbbbk./..kkkk..",food:"..kkkk../.kggggk./.krrrrk./.krwwrk./.krrrrk./.krrrrk./.kggggk./..kkkk..",flash:"..kyyk../.kyyyyk./..kggk../..kggk../..kgwk../..kggk../..kggk../..kkkk..",bat:"..kkkk../.kyyyyk./.kGGGGk./.kGwwGk./.kGGGGk./.kGGGGk./.kkkkkk./........",radio:"..k...../...k..../.kkkkkk./.kggggk./.kgyygk./.kggggk./.kgkkgk./.kkkkkk.",med:"..kkkk../.kwwwwk./kwwwrwwk/kwwrrrwk/kwwwrwwk/kwwwwwwk/.kwwwwk./..kkkk..",pills:"..kkkk../.krrwwk./.krrwwk./..kkkk../......../...kkk../..kwwwk./...kkk..",cash:"......../kkkkkkkk/kGGGGGGk/kGGyyGGk/kGyGGyGk/kGGyyGGk/kGGGGGGk/kkkkkkkk",doc:".kkkkk../.kwwwwk./.kwkkwk./.kwwwwk./.kwkkwk./.kwwwwk./.kwkkwk./.kkkkkk.",blanket:"......../kkkkkkkk/krrrrrrk/krwrwrrk/krrrrrrk/kkkkkkkk/......../........",stove:"..y.y.../.yyyyy../kkkkkkkk/kggggggk/kgkkkkgk/kggggggk/kkkkkkkk/........",tool:"..kkk.../.kggkk../..kgk.../...kgk../....kgk./.....kgk/....knnk/.....kk.",mask:"......../.kkkkkk./kwwwwwwk/kwwwwwwk/kkwwwwkk/.kkkkkk./......../........",key:"..kkk.../.kyyyk../.kykyk../.kyyyk../..kyk.../..kyyk../..kyk.../..kyyk..",map:"kkkkkkkk/kwwkwwwk/kwGkwbwk/kwwkwwwk/kwwkwwwk/kwwkwrwk/kwwkwwwk/kkkkkkkk",fire:"...r..../..rry.../.rryyr../.ryyyr../.rryyr../..kkk.../..kwk.../..kkk...",spray:"..kk..../..kkkk../.kbbbbk./.kbwwbk./.kbbbbk./.kbbbbk./.kbbbbk./..kkkk..",tape:"..kkkk../.kyyyyk./kyyggyyk/kygkkgyk/kygkkgyk/kyyggyyk/.kyyyyk./..kkkk..",paw:"k.k..k.k/kwk..kwk/.k.kk.k./..kwwk../.kwwwwk./.kwwwwk./..kwwk../........",cloth:".kk..kk./kwwkkwwk/kwwwwwwk/.kwwwwk./.kwwwwk./.kwwwwk./.kwwwwk./.kkkkkk.",box:"kkkkkkkk/knnnnnnk/knyyyynk/knnnnnnk/knnnnnnk/knnnnnnk/kkkkkkkk/........"};
+const IM=[[/pala de zapador/,"tool"],[/cinta/,"tape"],[/mascarilla|guantes/,"mask"],[/gel |toallitas|higiene|antisép/,"spray"],[/pastilla|paracetamol|antihist|antidiar|medicaci|yodo|comprimid/,"pills"],[/manta/,"blanket"],[/botiqu|gasas|vendas|tiritas|esparadrapo|quemad|termóm/,"med"],[/mascota/,"paw"],[/agua|suero|sales|potab|filtro/,"water"],[/comida|raciones/,"food"],[/mechero|cerill|vela/,"fire"],[/linterna|frontal/,"flash"],[/pila|batería|cargador/,"bat"],[/radio|geiger/,"radio"],[/efectivo/,"cash"],[/document|recetas|copia|plan familiar|alergias|guía|pendrive|estanca/,"doc"],[/hornillo|cartucho|gas/,"stove"],[/llaves/,"key"],[/mapa/,"map"],[/ropa|botas|chaleco|impermeable/,"cloth"],[/herram|multiher|tijeras|pinzas|silbato|extintor|sacos|plástico/,"tool"]];
+const IC={};function ic(n){const t=n.toLowerCase(),k=(IM.find(m=>m[0].test(t))||[0,"box"])[1];return IC[k]||(IC[k]=`<svg viewBox="0 0 8 ${SP[k].split("/").length}" shape-rendering="crispEdges">`+SP[k].split("/").map((r,y)=>[...r].map((c,x)=>c=="."?"":`<rect x="${x}" y="${y}" width="1" height="1" fill="${PAL[c]}"/>`).join("")).join("")+"</svg>")}
+function bp(f){try{const a=bp.c||(bp.c=new AudioContext()),o=a.createOscillator(),g=a.createGain();o.type="square";o.frequency.value=f;g.gain.value=.04;o.connect(g);g.connect(a.destination);o.start();o.stop(a.currentTime+.07)}catch(e){}}
+function items(t){if(t=="b")return BO.map((it,i)=>({key:"b"+i,it,q:qty(it,"h"),have:!!S.bk[i],i,c:it.c}));return pairs(it=>it.s.includes(S.sc)&&it.b.includes(t)).filter(x=>x.b==t).map(x=>({key:x.k,it:x.it,q:qty(x.it,x.b),have:!!S.chk[x.k],i:x.i}))}
+function grid(t){const L=items(t);if(!S.cur||!L.some(x=>x.key==S.cur))S.cur=L[0]&&L[0].key;const n=L.filter(x=>x.have).length,p=L.length?Math.round(100*n/L.length):0;
+let h=`<div class="pn"><div class="ih"><span>${{h:"MALETÍN · "+S.days+" DÍAS",e:"MOCHILA · 72H",b:"BOTIQUÍN"}[t]}</span><span>${n}/${L.length} · ${p}%</span></div><div class="gr">`,c="";
+L.forEach(x=>{if(t=="b"&&x.c!=c){c=x.c;h+=`<div class="cat">${c}</div>`}h+=`<button class="slot ${x.have?"on":""} ${x.key==S.cur?"sel":""}" data-s="${x.key}" aria-label="${x.it.n}">${ic(x.it.n)}<i>${x.q}</i></button>`});
+h+="</div></div>";const f=L.find(x=>x.key==S.cur);
+if(f){const it=f.it,e=t=="b"?S.bx[f.i]:"";h+=`<div class="pn det"><div class="big ${f.have?"on":""}">${ic(it.n)}</div><div class="dt"><h3>${it.n}</h3><div>NECESITAS: <b>×${f.q} ${it.u}</b></div><div>${bg(it.r)}</div>${it.j?`<p>${it.j}</p>`:""}${e&&e<dT()?'<p class="bad">CADUCADO</p>':e&&e<dS()?'<p class="bad">Caduca en menos de 30 días</p>':""}${t=="b"&&it.x?`<label class="dx">CADUCA <input type="date" data-bx="${f.i}" value="${e||""}"></label>`:""}</div><button class="use ${f.have?"on":""}" data-tg="${f.key}">${f.have?"✔ EQUIPADO":"▢ LO TENGO"}</button></div>`}
+if(t=="b"){const m=bot();h+=m.slice(m.indexOf('<div class="pn"><h2>MEDICACIÓN'))}return h}
+function hud(){const a=pct(()=>true),st=a<34?["INFECTADO","var(--r)"]:a<67?["EN RIESGO","var(--a)"]:["A SALVO","#2f5d2a"],seg=p=>{let q="";for(let i=0;i<10;i++)q+=`<u class="${i<Math.round(p/10)?"f":""}"></u>`;return q};
+const rows=[["TODO",""],...Object.entries(SC).map(([c,l])=>[l.replace(/^\S+ /,"").toUpperCase(),c])];$("hud").style.setProperty("--c",st[1]);
+$("hud").innerHTML=`<div class="ecg"><svg viewBox="0 0 100 30" preserveAspectRatio="none"><polyline points="0,15 20,15 25,15 28,4 32,26 36,15 55,15 60,15 63,2 67,28 71,15 100,15"/></svg><b>${st[0]}</b></div><div class="sg">${rows.map(r=>{const p=pct(x=>x.s.includes(r[1]));return `<div><span>${r[0]}</span><div class="sgb">${seg(p)}</div><em>${p}%</em></div>`}).join("")}</div>`}
+document.addEventListener("click",e=>{const b=e.target.closest("[data-s],[data-tg]");if(!b)return;const d=b.dataset;if(d.s){S.cur=d.s;bp(520);render()}
+if(d.tg){const k=d.tg,bo=/^b\d+$/.test(k);let on;if(bo){const i=k.slice(1);S.bk[i]=on=!S.bk[i]}else S.chk[k]=on=!S.chk[k];bp(on?880:300);navigator.vibrate&&navigator.vibrate(20);render()}});
+const _r=render;render=function(){_r();hud()};$("emb").innerHTML=ic("botiquín");
+render();
+(()=>{
+SP.bottle="...kk.../...kk.../..kggk../..kbbk../.kbbbbk./.kbwbbk./.kbwbbk./.kbbbbk./.kbbbbk./.kbbbbk./.kbbbbk./.kbbbbk./.kbbbbk./.kbbbbk./.kbbbbk./.kbbbbk./.kbbbbk./.kbbbbk./.kbbbbk./.kbbbbk./.kbbbbk./.kbbbbk./..kkkk..";SP.medkit="kkkkkkkk/kwwrrwwk/kwwrrwwk/krrrrrrk/krrrrrrk/kwwrrwwk/kwwrrwwk/kkkkkkkk";SP.bandage="..kkkk../.kwwwwk./kwwkkwwk/kwkwwkwk/kwkwwkwk/kwwkkwwk/.kwwwwk./..kkkk..";SP.knife="......kk/.....kgk/....kgk./...kgk../..kgk.../.knnk.../knnk..../kkk.....";SP.gas="..kkkk../.kggggk./kgwwwwgk/kgwkkwgk/kgwwwwgk/.kgkkgk./..kggk../...kk...";SP.saline="..kkkk../.kbbbbk./.kbwwbk./.kbbbbk./.kbbbbk./..kbbk../...kk.../...kg...";
+IM.unshift([/botella/,"bottle"],[/mascarilla/,"gas"],[/botiqu|termóm/,"medkit"],[/gasas|vendas|tiritas|esparadrapo|quemad/,"bandage"],[/multiher|tijeras|pinzas|herram/,"knife"],[/suero|rehidrat/,"saline"]);
+Object.assign(PAL,{k:"#0d0e0a",w:"#cfc8b0",g:"#7c8077",b:"#5f7f8f",r:"#8f2f26",y:"#b9a24a",n:"#6b5333",G:"#5e7a45"});
+SP.water="..kkk.../..kgk.../.kkbkk../.kbbbbk./.kbwwbk./.kbbbbk./.kbbbbk./..kkkk..";
+SP.food="..kkkk../.kyyyyk./.kggggk./.kwrrwk./.kwrrwk./.kggggk./.kggggk./..kkkk..";
+const C=5,SZ={water:[2,2],food:[2,2],flash:[1,1],bat:[1,1],radio:[1,2],med:[2,1],pills:[1,1],cash:[1,1],doc:[1,2],blanket:[2,2],stove:[2,2],tool:[1,2],mask:[1,1],key:[1,1],map:[2,1],fire:[1,1],spray:[1,1],tape:[1,1],paw:[2,1],cloth:[2,2],box:[1,1],medkit:[2,2],bandage:[1,1],knife:[1,2],gas:[1,1],saline:[1,1],bottle:[1,2]};
+S.pk=S.pk||{};S.pk.L=S.pk.L||50;S.pk.pl=S.pk.pl||{};S.pk.rt=S.pk.rt||{};S.pk.n=S.pk.n||{};S.pk.st=S.pk.st||{};
+const P=()=>S.pk,R=()=>P().L/10;
+const ik=n=>{const t=n.toLowerCase();return(IM.find(m=>m[0].test(t))||[0,"box"])[1]};
+const KS={food:{per:4,min:2},mask:{fix:1},gas:{fix:1},cash:{per:300,min:1},pills:{per:10,min:1},med:{per:7,min:2},paw:{per:2,min:2},bat:{per:2,min:1},fire:{per:4,min:1},blanket:{u:2}};
+function shape(A,b){const Rm=R();A=Math.max(1,Math.min(A,C*Rm));if(A==b[0]*b[1]&&b[1]<=Rm)return b;let best=null;for(let w=1;w<=C;w++){const h=Math.ceil(A/w);if(h>Rm)continue;const sc=(w*h-A)*2+Math.abs(w-h)+(w>h?.1:0);if(!best||sc<best[0])best=[sc,[w,h]]}return best?best[1]:[C,Rm]}
+const BIG=new Set(["water","blanket","stove","tool","radio","med","doc","map","knife","bottle","cloth","medkit","flash"]);
+const nsz=n=>{n=n.toLowerCase();return /pala de zapador|manta o saco/.test(n)?[2,3]:/machete|hacha|palanca/.test(n)?[1,3]:/pastilla/.test(n)?[1,1]:null};
+function dm(x){const ov=nsz(x.it.n);if(ov)return P().rt[x.key]?[ov[1],ov[0]]:ov;if(x.un){const k=ik(x.it.n),b=BIG.has(k)?(SZ[k]||[1,1]):[1,1];return P().rt[x.key]?[b[1],b[0]]:b}const k=ik(x.it.n),b=SZ[k]||[1,1];let s;if(x.bt)s=R()>=3?[1,3]:[3,1];else{const c=KS[k],q=Math.max(1,x.q),A=c?(c.fix?c.fix:c.per?Math.max(c.min,Math.ceil(q/c.per-1e-9)):Math.ceil(q*c.u-1e-9)):b[0]*b[1]*Math.ceil(q-1e-9);s=shape(A,b)}return P().rt[x.key]?[s[1],s[0]]:s}
+function fits(k,px,py,L){const x=L.find(i=>i.key==k),[w,h]=dm(x);if(px<0||py<0||px+w>C||py+h>R())return 0;
+return L.every(o=>{const q=P().pl[o.key];if(o.key==k||!q)return 1;const [a,b]=dm(o);return px+w<=q.x||q.x+a<=px||py+h<=q.y||q.y+b<=py})}
+let pkmsg="";window.PK={dm,fits,R,C};
+function findSpot(k,L){const p=P(),r0=p.rt[k]?1:0;for(const r of[r0,1-r0]){p.rt[k]=r;for(let y=0;y<R();y++)for(let c=0;c<C;c++)if(fits(k,c,y,L))return{pos:{x:c,y},r}}p.rt[k]=r0;return null}
+function setCarry(f,v){const p=P(),mx=Math.floor(f.v+1e-9);v=Math.max(0,Math.min(Math.round(v),mx));if(f.v<1)v=v?f.v:0;
+if(f.un){p.n[f.ck]=v;stt("ca");bp(v>=f.need?880:520);navigator.vibrate&&navigator.vibrate(15);render();return}
+const old=p.n[f.key],r0=p.rt[f.key];p.n[f.key]=v;const nl=items("e");
+if(p.pl[f.key]){if(v<=0)delete p.pl[f.key];else{const q=p.pl[f.key];if(!fits(f.key,q.x,q.y,nl)){const sp=findSpot(f.key,nl);if(sp){p.pl[f.key]=sp.pos;p.rt[f.key]=sp.r}else{if(old===undefined)delete p.n[f.key];else p.n[f.key]=old;p.rt[f.key]=r0;pkmsg="No cabe: libera hueco o elige una mochila mayor.";bp(150);navigator.vibrate&&navigator.vibrate([30,40,30]);render();return}}}}
+stt("ca");bp(v>=f.need?880:520);navigator.vibrate&&navigator.vibrate(15);render()}
+const _g=grid;
+const _it=items;
+items=function(t){
+if(t=="h"){const o=[];I.forEach((it,i)=>{if(!it.s.includes(S.sc))return;const b=it.b.includes("h")?"h":"e",q=qty(it,b);if(q>0)o.push({key:i+b,it,q,i,b})});return o}
+if(t=="e"){const o=[],pl=S.pk.pl;I.forEach((it,i)=>{if(!it.s.includes(S.sc)||!it.b.includes("e"))return;const need=qty(it,"e"),v=iv(i);if(!(need>0)||v<=0)return;
+if(isW(it)){const bt={...it,n:"Botella de agua (1,5 L)",u:"botella"};wl(i).forEach((l,n)=>o.push({key:i+"e_"+n,it:bt,q:1,l,bt:1,i,have:!!pl[i+"e_"+n]}))}
+else{const nn=S.pk.n&&S.pk.n[i+"e"],cq=nn===undefined?Math.min(v,need):Math.min(nn,v);if(UNIT(it)){const ck=i+"e";const cnt=Math.max(1,Math.floor(cq+1e-9)),pre=ck+"~",st=S.pk.st,us=new Set();let tot=0;
+Object.keys(pl).forEach(k=>{if(k.slice(0,pre.length)!=pre)return;let c=st[k]||1;if(tot+c>cnt){c=cnt-tot;if(c<=0){delete pl[k];delete st[k];return}st[k]=c}tot+=c;us.add(+k.slice(pre.length));o.push({key:k,ck,un:1,it,q:cq,need,v,i,have:1,c})});
+for(let n=0,r=cnt-tot;r>0;r--){while(us.has(n))n++;us.add(n);o.push({key:pre+n,ck,un:1,it,q:cq,need,v,i,have:false,c:1})}}else o.push({key:i+"e",it,q:cq,need,v,i,have:!!pl[i+"e"]})}});return o}
+return _it(t)};
+function invGrid(){const L=items("h");if(!L.some(x=>x.key==S.cur))S.cur=L[0]&&L[0].key;sync();
+const f1=x=>Math.min(1,iv(x.i)/x.q),n=L.filter(x=>f1(x)>=1).length,pp=L.length?Math.round(100*L.reduce((s,x)=>s+f1(x),0)/L.length):0;
+let h=`<div class="pn"><div class="ih"><span>INVENTARIO · ${S.days} DÍAS</span><span>${n}/${L.length} · ${pp}%</span></div><div class="gr">`;
+L.forEach(x=>{const v=iv(x.i),c=v>=x.q?"on":v>0?"pt":"";h+=`<button class="slot ${c} ${x.key==S.cur?"sel":""}" data-s="${x.key}" aria-label="${x.it.n}">${ic(x.it.n)}<i>${+v.toFixed(1)}/${x.q}</i></button>`});
+h+="</div></div>";const f=L.find(x=>x.key==S.cur);
+if(f){const it=f.it,v=iv(f.i),w=isW(it),st=v>=f.q?["COMPLETO","on"]:v>0?["PARCIAL "+(+v.toFixed(1))+"/"+f.q,"pt"]:["FALTA",""];
+h+=`<div class="pn det"><div class="big ${v>=f.q?"on":""}">${ic(it.n)}</div><div class="dt"><h3>${it.n}</h3><div>NECESITAS: <b>×${f.q} ${it.u}</b></div><div>${bg(it.r)}</div>${it.j?`<p>${it.j}</p>`:""}${w?`<p>Se guardan en botellas de 1,5 L: ${wl(f.i).length} botellas con lo que tienes.</p>`:""}</div><div class="qc"><b class="stt ${st[1]}">${st[0]}</b><div class="qr"><button data-q="-1">−</button><input id="qv" type="number" inputmode="decimal" min="0" step="${w?.5:1}" value="${v}" aria-label="Cantidad que tienes"><button data-q="1">+</button><button data-q="all">TODO</button></div></div></div>`}
+return h}
+grid=function(t){if(t=="h")return invGrid();if(t!="e")return _g(t);
+const L=items("e"),p=P(),r=R();
+Object.keys(p.pl).forEach(k=>{const i=parseInt(k),m=k.match(/_(\d+)$/),it=I[i];if(!it||iv(i)<=0||(UNIT(it)&&/e$/.test(k))||(m?+m[1]>=wl(i).length:isW(it)))delete p.pl[k]});
+L.forEach(x=>{const q=p.pl[x.key];if(q&&(!(x.q>0)||!fits(x.key,q.x,q.y,L)))delete p.pl[x.key]});
+if(!L.some(x=>x.key==S.cur))S.cur=L[0]&&L[0].key;sync();
+const pl=L.filter(x=>p.pl[x.key]),un=L.filter(x=>!p.pl[x.key]),used=pl.reduce((s,x)=>{const d=dm(x);return s+d[0]*d[1]},0),lab=x=>x.un?(x.c>1?"×"+x.c:""):x.bt?String(x.l).replace(".",",")+"L":(x.v>x.q+1e-9?x.q+"/"+(+x.v.toFixed(1)):x.q);
+if(!L.length)return `<div class="pn"><div class="ih"><span>MOCHILA · ${p.L} L</span></div><small>Aún no tienes nada en el inventario. Marca lo que tienes en la pestaña INVENTARIO y aparecerá aquí listo para guardar en la mochila.</small><div class="pa"><button data-t="h">IR AL INVENTARIO</button></div></div>`;
+const pc=pl.map(x=>{const [w,h]=dm(x),q=p.pl[x.key];return `<div class="pc ${x.key==S.cur?"sel":""}" data-pk="${x.key}" style="left:${q.x*20}%;top:${q.y/r*100}%;width:${w*20}%;height:${h/r*100}%">${ic(x.it.n)}<i>${lab(x)}</i></div>`}).join("");
+const tr=un.map(x=>{const [w,h]=dm(x);return `<div class="tp ${x.key==S.cur?"sel":""}" data-pk="${x.key}" style="width:${w*40}px;height:${h*40}px">${ic(x.it.n)}<i>${lab(x)}</i></div>`}).join("");
+const f=L.find(x=>x.key==S.cur),d=f&&dm(f);let dt="";const mg=pkmsg;pkmsg="";
+if(f){const nd=qty(f.it,"e");if(f.bt){const lt=wl(f.i).reduce((s,l,n)=>s+(p.pl[f.i+"e_"+n]?l:0),0);dt=`<h3>${f.it.n}${f.l<1.5?" · "+String(f.l).replace(".",",")+" L":""}</h3><div>EN MOCHILA: <b>${String(+lt.toFixed(1)).replace(".",",")} / ${nd} L</b> ${lt>=nd-1e-9?"":'<span class="bd">PARCIAL</span>'}</div>`}
+else dt=`<h3>${f.it.n}</h3><div>EN ALMACÉN: <b>×${+f.v.toFixed(1)} ${f.it.u}</b></div>${f.c>1?`<div>PILA: <b>×${f.c}</b></div>`:""}<div>LLEVAS: <b>×${f.q}</b> · NECESITAS: <b>×${f.need}</b> ${f.q<f.need?'<span class="bd">PARCIAL</span>':""}</div><div>${bg(f.it.r)}</div>`}
+return `<div class="pn"><div class="ih"><span>INVENTARIO · ${un.length} POR METER</span><span>ARRASTRA ↓</span></div><div class="tray">${tr||"<small>Todo guardado en la mochila.</small>"}</div></div>
+<div class="pn"><div class="ih"><span>MOCHILA · ${p.L} L · ${pct(x=>x.s.includes(S.sc),"e")}%</span><span>${used}/${C*r} SLOTS</span></div>
+<div class="lt">${[20,30,40,50,65,90].map(l=>`<button data-l="${l}" class="${l==p.L?"on":""}">${l}L</button>`).join("")}</div>
+<div class="pk" id="pk" style="--R:${r};aspect-ratio:${C}/${r}">${pc}</div>
+<div class="pa"><button data-auto="1">⚙ AUTO-ORDENAR</button><button data-clr="1">✕ VACIAR</button></div></div>`+
+(f?`<div class="pn det"><div class="big ${p.pl[f.key]?"on":""}">${ic(f.it.n)}</div><div class="dt">${dt}<div>OCUPA: <b>${d[0]}×${d[1]} slots</b></div>${f.it.j?`<p>${f.it.j}</p>`:""}${mg?`<p class="bad">${mg}</p>`:""}</div>${f.bt?"":`<div class="qc"><b class="stt">LLEVAR</b><div class="qr"><button data-pq="-1" aria-label="Quitar una unidad">−</button><input id="pqv" type="number" inputmode="numeric" min="0" max="${Math.floor(f.v)}" step="1" value="${f.q}" aria-label="Unidades que llevas"><button data-pq="1" aria-label="Añadir una unidad">+</button><button data-pq="all">TODO</button></div></div>`}<div class="pa" style="flex:1 1 100%"><button data-rot="1">↻ ROTAR</button>${p.pl[f.key]?'<button data-out="1">SACAR</button>':""}${f.c>1?'<button data-sp="1">SEPARAR 1</button>':""}</div></div>`:"")}
+let dg=null,gh=null,hl=null,asc=0;
+const clean=()=>{gh&&gh.remove();hl&&hl.remove();gh=hl=null;clearInterval(asc);asc=0;document.documentElement.classList.remove("lock")};
+document.addEventListener("touchmove",e=>{if(dg)e.preventDefault()},{passive:false});
+document.addEventListener("contextmenu",e=>{if(dg)e.preventDefault()});
+document.addEventListener("pointerdown",e=>{const el=e.target.closest("[data-pk]");if(el)dg={k:el.dataset.pk,x:e.clientX,y:e.clientY,cx:e.clientX,cy:e.clientY,m:0}});
+function mv(){const pk=$("pk");if(!pk||!dg)return;const rc=pk.getBoundingClientRect(),cw=rc.width/C,L=items("e"),x=L.find(i=>i.key==dg.k);if(!x)return;const [w,h]=dm(x);
+if(!gh){gh=document.createElement("div");gh.className="pc gh";gh.innerHTML=ic(x.it.n);document.body.appendChild(gh);hl=document.createElement("div");pk.appendChild(hl)}
+gh.style.cssText=`width:${w*cw}px;height:${h*cw}px;left:${dg.cx-w*cw/2}px;top:${dg.cy-h*cw/2}px`;
+dg.gx=Math.round((dg.cx-rc.left)/cw-w/2);dg.gy=Math.round((dg.cy-rc.top)/cw-h/2);dg.ok=fits(dg.k,dg.gx,dg.gy,L);
+hl.style.cssText=`left:${dg.gx*20}%;top:${dg.gy/R()*100}%;width:${w*20}%;height:${h/R()*100}%`;hl.className="hl "+(dg.ok?"ok":"no")}
+document.addEventListener("pointermove",e=>{if(!dg)return;dg.cx=e.clientX;dg.cy=e.clientY;if(!dg.m){if(Math.hypot(e.clientX-dg.x,e.clientY-dg.y)<8)return;dg.m=1;document.documentElement.classList.add("lock");navigator.vibrate&&navigator.vibrate(10);
+asc=setInterval(()=>{if(!dg||!dg.m)return;const H=innerHeight;if(dg.cy>H-110)scrollBy(0,14);else if(dg.cy<90)scrollBy(0,-14);else return;mv()},16)}mv()});
+document.addEventListener("pointerup",e=>{if(!dg)return;const d=dg;dg=null;clean();
+if(!d.m){S.cur=d.k;bp(520);window.openDlg&&window.openDlg();render();return}
+const rc=$("pk").getBoundingClientRect(),inn=e.clientX>rc.left-10&&e.clientX<rc.right+10&&e.clientY>rc.top-10&&e.clientY<rc.bottom+10,p=P();
+{const L2=items("e"),x0=L2.find(i=>i.key==d.k);if(x0&&x0.un&&STK(x0.it)&&inn&&!d.ok){const t=L2.find(o=>o.key!=d.k&&o.ck==x0.ck&&p.pl[o.key]&&p.pl[o.key].x==d.gx&&p.pl[o.key].y==d.gy);
+if(t){const room=LIM-t.c,mv=Math.min(room,x0.c);if(mv>0){p.st[t.key]=t.c+mv;if(x0.c-mv>0&&p.pl[d.k])p.st[d.k]=x0.c-mv;else{delete p.pl[d.k];delete p.st[d.k]}S.cur=t.key;bp(880);stt("dr")}else{bp(150);navigator.vibrate&&navigator.vibrate([30,40,30])}render();return}}}
+if(d.ok){const i0=items("e").find(i=>i.key==d.k);if(i0&&i0.q<=0)delete p.n[d.k];if(!p.pl[d.k])delete p.st[d.k];p.pl[d.k]={x:d.gx,y:d.gy};S.cur=d.k;bp(880);stt("dr")}else if(!inn&&p.pl[d.k]){delete p.pl[d.k];delete p.st[d.k];bp(300)}else if(inn){bp(110);navigator.vibrate&&navigator.vibrate([30,40,30])}
+render()});
+document.addEventListener("pointercancel",()=>{dg=null;clean()});
+document.addEventListener("click",e=>{const d=e.target.dataset,p=P(),L=items("e");
+if(d.l){p.L=+d.l;render()}
+if(d.out){delete p.pl[S.cur];delete p.st[S.cur];render()}if(d.sp){const k=S.cur;if((p.st[k]||1)>1){p.st[k]--;render()}}
+if(d.clr){p.pl={};p.st={};render()}
+if(d.rot){const k=S.cur,q=p.pl[k];p.rt[k]=p.rt[k]?0:1;if(q&&!fits(k,q.x,q.y,L)){p.rt[k]=p.rt[k]?0:1;bp(150)}else stt("ro");render()}
+if(d.auto){stt("au");L.filter(x=>!p.pl[x.key]&&x.q>0).sort((a,b)=>{const A=dm(a),B=dm(b);return B[0]*B[1]-A[0]*A[1]}).forEach(x=>{if(STK(x.it)){const t=L.find(o=>o.ck==x.ck&&o.key!=x.key&&p.pl[o.key]&&(p.st[o.key]||1)<LIM);if(t){p.st[t.key]=(p.st[t.key]||1)+1;return}}for(const r of[0,1]){p.rt[x.key]=r;for(let y=0;y<R();y++)for(let c=0;c<C;c++)if(!p.pl[x.key]&&fits(x.key,c,y,L)){delete p.st[x.key];p.pl[x.key]={x:c,y}}}if(!p.pl[x.key])p.rt[x.key]=0});bp(880);render()}});
+document.addEventListener("click",e=>{const b=e.target.closest("[data-pq]");if(!b)return;const f=items("e").find(x=>x.key==S.cur);if(!f||f.bt)return;const v=b.dataset.pq=="all"?Math.floor(f.v+1e-9)||f.v:f.q+(+b.dataset.pq);setCarry(f,v)});
+document.addEventListener("change",e=>{if(e.target.id!="pqv")return;const f=items("e").find(x=>x.key==S.cur);if(f&&!f.bt)setCarry(f,+e.target.value||0)});
+for(const k in IC)delete IC[k];$("emb").innerHTML=ic("botiquín");render();
+})();
+(()=>{
+const prog=[[57,60,64],[53,57,60],[50,53,57],[52,56,59]],mel=[69,0,72,0,76,0,74,72, 72,0,0,0,69,0,65,0, 69,0,74,0,72,0,69,0, 71,0,68,0,71,0,76,0];
+let ac,mg,nb,st=0,nx=0,tm=0;const fr=m=>440*Math.pow(2,(m-69)/12);
+function tone(m,t,d,ty,v){const o=ac.createOscillator(),g=ac.createGain();o.type=ty;o.frequency.value=fr(m);g.gain.setValueAtTime(v,t);g.gain.exponentialRampToValueAtTime(.0001,t+d);o.connect(g);g.connect(mg);o.start(t);o.stop(t+d)}
+function nz(t,d,v){const s=ac.createBufferSource(),g=ac.createGain();s.buffer=nb;g.gain.setValueAtTime(v,t);g.gain.exponentialRampToValueAtTime(.0001,t+d);s.connect(g);g.connect(mg);s.start(t);s.stop(t+d)}
+function kick(t){const o=ac.createOscillator(),g=ac.createGain();o.frequency.setValueAtTime(130,t);o.frequency.exponentialRampToValueAtTime(40,t+.12);g.gain.setValueAtTime(.4,t);g.gain.exponentialRampToValueAtTime(.0001,t+.15);o.connect(g);g.connect(mg);o.start(t);o.stop(t+.16)}
+function step(i,t){const s=i&7,c=prog[i>>3];if(s%2==0)tone(c[0]-12+(s==4?7:0),t,.28,"triangle",.5);tone(c[s%3]+12,t,.14,"square",.04);if(mel[i])tone(mel[i],t,.4,"square",.08);if(s%4==0)kick(t);if(s%2)nz(t,.04,.05);if(s==6)nz(t,.1,.09)}
+function play(){if(tm)return;if(!ac){ac=new AudioContext();mg=ac.createGain();mg.gain.value=.45;mg.connect(ac.destination);nb=ac.createBuffer(1,ac.sampleRate,ac.sampleRate);const d=nb.getChannelData(0);for(let i=0;i<d.length;i++)d[i]=Math.random()*2-1}
+ac.resume();nx=ac.currentTime+.1;tm=setInterval(()=>{while(nx<ac.currentTime+.25){step(st,nx);nx+=.3125;st=(st+1)%32}},60)}
+function halt(){clearInterval(tm);tm=0}
+const ui=()=>{$("mu").textContent=tm?"🔊":"🔇"};
+$("gd").insertAdjacentHTML("beforebegin",'<button id="mu" class="gb" aria-label="Música">🔇</button>');
+let first=1;document.addEventListener("pointerdown",e=>{if(e.target.id=="mu")return;if(first){first=0;if(S.mu!==false){play();ui()}}});
+document.addEventListener("click",e=>{if(e.target.id!="mu")return;first=0;if(tm){halt();S.mu=false}else{play();S.mu=true}sv();ui()});
+document.addEventListener("visibilitychange",()=>{if(document.hidden){halt()}else if(S.mu!==false&&!first){play()}ui()});
+})();
+(()=>{
+S.ach=S.ach||{};S.lv=S.lv||0;
+const cc=()=>Object.values(S.chk).filter(Boolean).length;
+const RN0=["CARNE FRESCA","RECLUTA","SAQUEADOR","RASTREADOR","VETERANO","CAZADOR","LEYENDA"];
+const sumInv=()=>Object.values(S.inv||{}).reduce((a,v)=>a+(+v||0),0),kinds=()=>I.filter((_,i)=>iv(i)>0).length,nbk=()=>Object.values(S.bk||{}).filter(Boolean).length,ndays=()=>Object.keys(S.vd||{}).length,sg=k=>(S.st&&S.st[k])||0,nbx=()=>Object.values(S.bx||{}).filter(Boolean),nplaced=()=>items("e").filter(x=>S.pk.pl[x.key]).length,bagAll=()=>{const L=items("e");return L.length>0&&L.every(x=>S.pk.pl[x.key])},bagPct=()=>pct(x=>x.s.includes(S.sc),"e"),scp=c=>pct(x=>x.s.includes(c)),nach=()=>Object.keys(S.ach).length,hasPet=()=>S.pets>0&&I.some((it,i)=>/mascota/i.test(it.n)&&iv(i)>0);
+const ROLES=["Médico","Mecánico","Explorador","Cocinero","Vigía","Granjero"];
+const SCN={A:["TRINCHERA","BÚNKER"],N:["CORREDOR","FUGITIVO"],X:["ERMITAÑO","ROBINSON"],Z:["GUARNICIÓN","SEÑOR DE LA FORTALEZA"]};
+const AC=[
+["first","PRIMER BOTÍN","Equipa tu primer objeto",()=>cc()>=1,"EQUIPO"],
+["ten","MOCHILERO","Equipa 10 objetos",()=>cc()>=10,"EQUIPO"],
+["t25","ARSENAL","Equipa 25 objetos",()=>cc()>=25,"EQUIPO"],
+["t50","ALMACENISTA","Equipa 50 objetos",()=>cc()>=50,"EQUIPO"],
+["t100","INTENDENTE","Equipa 100 objetos",()=>cc()>=100,"EQUIPO"],
+["inv25","EXISTENCIAS","Acumula 25 unidades en el almacén",()=>sumInv()>=25,"EQUIPO"],
+["inv100","ACAPARADOR","Acumula 100 unidades en el almacén",()=>sumInv()>=100,"EQUIPO"],
+["inv250","BÚNKER ABASTECIDO","Acumula 250 unidades en el almacén",()=>sumInv()>=250,"EQUIPO"],
+["k10","SURTIDO","Ten 10 tipos de objeto distintos",()=>kinds()>=10,"EQUIPO"],
+["k25","CATÁLOGO","Ten 25 tipos de objeto distintos",()=>kinds()>=25,"EQUIPO"],
+["k50","BAZAR DEL APOCALIPSIS","Ten 50 tipos de objeto distintos",()=>kinds()>=50,"EQUIPO"],
+["ess","LO ESENCIAL","Todos los objetivos esenciales completos",()=>{const a=pairs(x=>x.s.includes(S.sc)&&x.it.b=="he");return a.length>0&&a.every(x=>S.chk[x.k])},"EQUIPO"],
+["p25","PRIMER CUARTO","25% del total",()=>pct(()=>true)>=25,"EQUIPO"],
+["half","PREPARADO","50% del total",()=>pct(()=>true)>=50,"EQUIPO"],
+["p75","TRES CUARTOS","75% del total",()=>pct(()=>true)>=75,"EQUIPO"],
+["full","AUTOSUFICIENTE","100% del total",()=>pct(()=>true)>=100,"EQUIPO"],
+...Object.entries(SCN).flatMap(([c,n])=>[["s50"+c,n[0],"50% del equipo de "+SC[c].replace(/^\S+ /,""),()=>scp(c)>=50,"AMENAZAS"],["s100"+c,n[1],"100% del equipo de "+SC[c].replace(/^\S+ /,""),()=>scp(c)>=100,"AMENAZAS"]]),
+["water","HIDRATADO","Agua para toda tu autonomía",()=>S.water>0&&S.water>=3*S.p*S.days,"AGUA Y COMIDA"],
+["w10","SED CALMADA","Almacena 10 L de agua",()=>S.water>=10,"AGUA Y COMIDA"],
+["w50","ALJIBE","Almacena 50 L de agua",()=>S.water>=50,"AGUA Y COMIDA"],
+["w100","EMBALSE","Almacena 100 L de agua",()=>S.water>=100,"AGUA Y COMIDA"],
+["w250","LAGO PROPIO","Almacena 250 L de agua",()=>S.water>=250,"AGUA Y COMIDA"],
+["wd7","SEMANA SIN SED","Agua para 7 días",()=>food().w>=7,"AGUA Y COMIDA"],
+["wd14","QUINCENA HIDRATADA","Agua para 14 días",()=>food().w>=14,"AGUA Y COMIDA"],
+["wd30","MES AL RÍO","Agua para 30 días",()=>food().w>=30,"AGUA Y COMIDA"],
+["f1","PRIMER BOCADO","Registra tu primer alimento",()=>S.food.length>=1,"AGUA Y COMIDA"],
+["f5","DESPENSA VARIADA","Registra 5 alimentos",()=>S.food.length>=5,"AGUA Y COMIDA"],
+["f10","GOURMET ZOMBI","Registra 10 alimentos",()=>S.food.length>=10,"AGUA Y COMIDA"],
+["food","DESPENSA LLENA","3 días de comida",()=>food().d>=3,"AGUA Y COMIDA"],
+["fd7","SEMANA DE FESTÍN","7 días de comida",()=>food().d>=7,"AGUA Y COMIDA"],
+["fd14","QUINCENA DE FESTÍN","14 días de comida",()=>food().d>=14,"AGUA Y COMIDA"],
+["fd30","DESPENSA DE LARGO PLAZO","30 días de comida",()=>food().d>=30,"AGUA Y COMIDA"],
+["kc1","DIEZ MIL CALORÍAS","Acumula 10.000 kcal",()=>food().kc>=1e4,"AGUA Y COMIDA"],
+["kc2","CIEN MIL CALORÍAS","Acumula 100.000 kcal",()=>food().kc>=1e5,"AGUA Y COMIDA"],
+["b1","PRIMEROS AUXILIOS","Marca 1 objeto del botiquín",()=>nbk()>=1,"BOTIQUÍN"],
+["b5","CURITA","Marca 5 objetos del botiquín",()=>nbk()>=5,"BOTIQUÍN"],
+["b10","ENFERMERO","Marca 10 objetos del botiquín",()=>nbk()>=10,"BOTIQUÍN"],
+["b50","MEDIO BOTIQUÍN","Botiquín al 50%",()=>bpc()>=50,"BOTIQUÍN"],
+["med","MÉDICO DE CAMPO","Botiquín al 100%",()=>bpc()>=100,"BOTIQUÍN"],
+["m1","MEDICADO","Registra 1 medicación",()=>S.med.length>=1,"BOTIQUÍN"],
+["m3","FARMACIA CASERA","Registra 3 medicaciones",()=>S.med.length>=3,"BOTIQUÍN"],
+["m6","BOTICARIO","Registra 6 medicaciones",()=>S.med.length>=6,"BOTIQUÍN"],
+["d3","FECHAS CONTROLADAS","Anota 3 caducidades",()=>nbx().length>=3,"BOTIQUÍN"],
+["dok","SIN CADUCAR","3 caducidades anotadas y ninguna vencida",()=>nbx().length>=3&&nbx().every(d=>d>=dT()),"BOTIQUÍN"],
+["pk1","PRIMER PASO","Mete tu primer objeto en la mochila",()=>nplaced()>=1,"MOCHILA"],
+["pk5","MOCHILA EN MARCHA","Mete 5 objetos en la mochila",()=>nplaced()>=5,"MOCHILA"],
+["pk10","CARGADO","Mete 10 objetos en la mochila",()=>nplaced()>=10,"MOCHILA"],
+["pk50","A MEDIAS","Mochila de evacuación al 50%",()=>bagPct()>=50,"MOCHILA"],
+["pk100","MOCHILA LISTA","Mochila de evacuación al 100%",()=>bagPct()>=100,"MOCHILA"],
+["pkall","TODO DENTRO","Todos los objetos de la mochila, en su sitio",()=>bagAll(),"MOCHILA"],
+["tetris","ARTE DEL EMPAQUE","Toda la mochila de evacuación en 40 L o menos",()=>bagAll()&&S.pk.L<=40,"MOCHILA"],
+["pk30","ULTRALIGERO","Toda la mochila de evacuación en 30 L o menos",()=>bagAll()&&S.pk.L<=30,"MOCHILA"],
+["pk20","MAESTRO DEL TETRIS","Toda la mochila de evacuación en 20 L o menos",()=>bagAll()&&S.pk.L<=20,"MOCHILA"],
+["slots","SIN HUECOS","Llena todos los slots de la mochila",()=>{const q=window.PK;if(!q)return false;const u=items("e").filter(x=>S.pk.pl[x.key]).reduce((a,x)=>{const d=q.dm(x);return a+d[0]*d[1]},0);return u>=q.C*q.R()},"MOCHILA"],
+["l20","MINIMALISTA","Elige la mochila de 20 L",()=>S.pk.L==20,"MOCHILA"],
+["l90","MULA DE CARGA","Elige la mochila de 90 L",()=>S.pk.L==90,"MOCHILA"],
+["ro1","GIRANDO PIEZAS","Rota un objeto en la mochila",()=>sg("ro")>=1,"MOCHILA"],
+["ro20","ROMPECABEZAS","Rota 20 veces",()=>sg("ro")>=20,"MOCHILA"],
+["au1","AUTOMÁTICO","Usa el auto-ordenar",()=>sg("au")>=1,"MOCHILA"],
+["dr10","TRANSPORTISTA","Coloca 10 veces objetos arrastrándolos",()=>sg("dr")>=10,"MOCHILA"],
+["dr50","MANO RÁPIDA","Coloca 50 veces objetos arrastrándolos",()=>sg("dr")>=50,"MOCHILA"],
+["ca1","UNO A UNO","Ajusta cuántas unidades llevas de un objeto",()=>sg("ca")>=1,"MOCHILA"],
+["ca25","CONTABLE","Ajusta unidades 25 veces",()=>sg("ca")>=25,"MOCHILA"],
+["sq1","NO ESTÁS SOLO","Recluta a 1 superviviente",()=>S.sq.length>=1,"ESCUADRÓN"],
+["sq3","BANDA","Recluta a 3 supervivientes",()=>S.sq.length>=3,"ESCUADRÓN"],
+["sqf","ESCUADRÓN COMPLETO","Recluta a todo tu grupo",()=>S.p>0&&S.sq.length>=S.p,"ESCUADRÓN"],
+["sqr3","ROLES VARIADOS","3 roles distintos en tu escuadrón",()=>new Set(S.sq.map(m=>m.r)).size>=3,"ESCUADRÓN"],
+["sqr6","EQUIPO DE ENSUEÑO","Los 6 roles cubiertos",()=>ROLES.every(r=>S.sq.some(m=>m.r==r)),"ESCUADRÓN"],
+["pet","AMIGO PELUDO","Cuenta con una mascota y su comida",()=>hasPet(),"ESCUADRÓN"],
+["sm1","PRIMER SIMULACRO","Lanza un simulacro de brote",()=>(S.sn||0)>=1,"SIMULACROS"],
+["sm5","ENTRENADO","Lanza 5 simulacros",()=>(S.sn||0)>=5,"SIMULACROS"],
+["sm20","VETERANO DE GUERRA","Lanza 20 simulacros",()=>(S.sn||0)>=20,"SIMULACROS"],
+["sw1","SIN BAJAS","Supera un simulacro sin fallos",()=>(S.sw||0)>=1,"SIMULACROS"],
+["sw5","IMPECABLE","Supera 5 simulacros sin fallos",()=>(S.sw||0)>=5,"SIMULACROS"],
+...[2,3,4,5,6,7].map(n=>["lv"+n,"RANGO: "+RN0[n-1],"Alcanza el nivel "+n,()=>(S.lv||0)>=n,"NIVEL"]),
+["lv10","MÁS ALLÁ DE LA LEYENDA","Alcanza el nivel 10",()=>(S.lv||0)>=10,"NIVEL"],
+["dd3","CONSTANTE","Entra en 3 días distintos",()=>ndays()>=3,"CONSTANCIA"],
+["dd7","UNA SEMANA VIVO","Entra en 7 días distintos",()=>ndays()>=7,"CONSTANCIA"],
+["dd14","FIEL AL REFUGIO","Entra en 14 días distintos",()=>ndays()>=14,"CONSTANCIA"],
+["dd30","SUPERVIVIENTE DEL MES","Entra en 30 días distintos",()=>ndays()>=30,"CONSTANCIA"],
+["tabs","EXPLORADOR","Visita todas las pestañas",()=>Object.keys(S.vt||{}).length>=6,"CONSTANCIA"],
+["scs","CUATRO RINCONES","Prueba los 4 escenarios",()=>Object.keys(S.vs||{}).length>=4,"CONSTANCIA"],
+["pl4","FAMILIA NUMEROSA","Planifica para 4 o más personas",()=>S.p>=4,"CONSTANCIA"],
+["pl6","GRAN GRUPO","Planifica para 6 o más personas",()=>S.p>=6,"CONSTANCIA"],
+["dy14","PLANIFICADOR","Planifica 14 días o más de autonomía",()=>S.days>=14,"CONSTANCIA"],
+["dy30","A LARGO PLAZO","Planifica 30 días o más de autonomía",()=>S.days>=30,"CONSTANCIA"],
+["mus","BANDA SONORA","Activa la música",()=>S.mu===true,"CONSTANCIA"],
+["nit","VIGILIA NOCTURNA","Activa el modo noche",()=>!!S.night,"CONSTANCIA"],
+["tr10","COLECCIONISTA","Desbloquea 10 trofeos",()=>nach()>=10,"MAESTRÍA"],
+["tr25","CAZATROFEOS","Desbloquea 25 trofeos",()=>nach()>=25,"MAESTRÍA"],
+["tr50","MAESTRO DE LOGROS","Desbloquea 50 trofeos",()=>nach()>=50,"MAESTRÍA"],
+["tr75","LEYENDA VIVIENTE","Desbloquea 75 trofeos",()=>nach()>=75,"MAESTRÍA"],
+["plat","PLATINO","Desbloquea todos los demás trofeos",()=>nach()>=AC.length-1,"MAESTRÍA"]];
+document.body.insertAdjacentHTML("beforeend",'<div id="ach"></div>');
+$("hud").insertAdjacentHTML("beforebegin",'<div class="gmh" id="gm"></div>');
+$("mu").insertAdjacentHTML("beforebegin",'<button id="tro" class="gb" aria-label="Logros">🏆</button>');
+const q=[];let busy=0;
+function toast(t,n){q.push([t,n]);if(!busy)nx()}
+function nx(){const a=q.shift();if(!a){busy=0;return}busy=1;const e=$("ach");e.innerHTML=`<b>${a[0]}</b><span>${a[1]}</span>`;e.classList.add("on");[523,659,784,1047].forEach((f,i)=>setTimeout(()=>bp(f),i*90));navigator.vibrate&&navigator.vibrate([40,30,40]);setTimeout(()=>{e.classList.remove("on");setTimeout(nx,450)},2600)}
+const RN=["CARNE FRESCA","RECLUTA","SAQUEADOR","RASTREADOR","VETERANO","CAZADOR","LEYENDA"];
+function game(){const f=food(),xp=15*cc()+5*Object.values(S.bk).filter(Boolean).length+5*S.med.length+Math.floor(20*Math.min(f.d,f.w,14)),lv=Math.floor(Math.sqrt(xp/20))+1,a=20*(lv-1)*(lv-1),b=20*lv*lv,
+m=pairs(x=>x.s.includes(S.sc)).find(x=>!S.chk[x.k]&&x.it.b=="he");
+$("gm").innerHTML=`<div class="lv">NV ${lv}</div><div class="xb"><small>${RN[Math.min(lv-1,6)]} · ${xp}/${b} XP</small><div class="bar"><i style="width:${100*(xp-a)/(b-a)}%"></i></div></div>`+(m?`<div class="ms" data-t="${m.b}"><b>OBJETIVO ▸</b> ${m.it.n} ×${qty(m.it,m.b)} <small>(${m.b=="h"?"INVENTARIO":"MOCHILA"})</small></div>`:`<div class="ms"><b>MISIÓN CUMPLIDA ▸</b> Todos los objetivos esenciales completos</div>`);
+if(S.lv&&lv>S.lv)toast("¡SUBES DE NIVEL!","NV "+lv+" · "+RN[Math.min(lv-1,6)]);S.lv=lv;
+S.vd=S.vd||{};S.vd[dT()]=1;S.vt=S.vt||{};S.vt[S.tab]=1;S.vs=S.vs||{};S.vs[S.sc]=1;
+const nw=[];AC.forEach(c=>{if(!S.ach[c[0]]){let ok=false;try{ok=c[3]()}catch(x){}if(ok){S.ach[c[0]]=1;nw.push(c)}}});
+if(nw.length&&nw.length<=2)nw.forEach(c=>toast("LOGRO DESBLOQUEADO",c[1]));else if(nw.length)toast("¡"+nw.length+" LOGROS DESBLOQUEADOS!",nw.slice(0,3).map(c=>c[1]).join(" · ")+"…");
+if("heb".includes(S.tab)){const L=items(S.tab);document.querySelectorAll("[data-pk],[data-s]").forEach(el=>{const x=L.find(i=>i.key==(el.dataset.pk||el.dataset.s));if(x)el.dataset.r=x.it.b||""})}
+sv()}
+const _r2=render;render=function(){_r2();game()};
+document.addEventListener("click",e=>{const m=e.target.closest(".ms[data-t]");if(m){S.tab=m.dataset.t;render();scrollTo({top:0,behavior:"smooth"})}
+if(e.target.id=="tro"){const n=AC.filter(c=>S.ach[c[0]]).length;let cat="";$("sheet").innerHTML=`<div class="sh"><h2>🏆 Logros · ${n}/${AC.length}</h2><div class="bar"><i style="width:${100*n/AC.length}%"></i></div>`+AC.map(c=>{let h="";if(c[4]!=cat){cat=c[4];const t=AC.filter(x=>x[4]==cat),u=t.filter(x=>S.ach[x[0]]).length;h=`<h3 class="trc">${cat} · ${u}/${t.length}</h3>`}return h+`<div class="tr ${S.ach[c[0]]?"u":""}"><em>${S.ach[c[0]]?"🏆":"🔒"}</em><div><b>${c[1]}</b><span>${c[2]}</span></div></div>`}).join("")+`<button id="gc" style="width:100%;margin-top:12px">Cerrar</button></div>`;$("sheet").classList.add("on")}});
+render();
+})();
+(()=>{
+document.addEventListener("click",e=>{const b=e.target.closest("[data-q]");if(!b)return;const f=items("h").find(x=>x.key==S.cur);if(!f)return;const c=iv(f.i),v=b.dataset.q=="all"?f.q:Math.max(0,c+(+b.dataset.q));setIv(f.i,v);bp(v>=f.q?880:520);navigator.vibrate&&navigator.vibrate(15);render()});
+document.addEventListener("change",e=>{if(e.target.id!="qv")return;const f=items("h").find(x=>x.key==S.cur);if(f){setIv(f.i,Math.max(0,+e.target.value||0));render()}});
+const GD={lata:400,bote:400,paquete:500,botella:1000,caja:500,bolsa:500,unidad:100},GU=u=>u=="kg"||u=="L"?1000:u=="g"?1:0;
+function fcalc(){const q=+$("fq").value||0,u=$("fu").value,g=GU(u)||(+$("fg").value||0),k=+$("fk").value||0;return{q,u,g,k,per:g*k/100,tot:q*g*k/100}}
+function fprev(){if(!$("fp"))return;const c=fcalc();$("fgw").style.display=GU(c.u)?"none":"";$("fp").textContent=c.k?`≈ ${Math.round(c.tot).toLocaleString("es-ES")} kcal en total (${Math.round(c.q*c.g)} g). Valor estimado: ajusta las kcal/100 g si las ves en la etiqueta.`:"Escribe el alimento y se estiman sus calorías, o pon las kcal/100 g de la etiqueta."}
+document.addEventListener("input",e=>{const i=e.target.id;if(!i)return;
+if(i=="fn"){const t=e.target.value.trim().toLowerCase(),L=s=>s.toLowerCase(),m=t&&(FD.find(f=>L(f[0])==t)||(t.length>2&&(FD.find(f=>L(f[0]).startsWith(t))||FD.find(f=>t.includes(L(f[0]).split(" ")[0])))));if(m){$("fk").value=m[1];if(m[2]){$("fu").value="unidad";$("fg").value=m[2]}}}
+if(i=="fu"&&GD[e.target.value])$("fg").value=GD[e.target.value];
+if(["fn","fq","fu","fg","fk"].includes(i))fprev()});
+document.addEventListener("click",e=>{const t=e.target;
+if(t.id=="fa"){const n=$("fn").value.trim(),c=fcalc();if(!n||!(c.q>0))return;S.food.push({n,q:c.q,u:c.u,k:+c.per.toFixed(2),e:$("fe").value});bp(660);render();return}
+const m=t.dataset.fm,p=t.dataset.fp;if(m!==undefined||p!==undefined){const i=+(m!==undefined?m:p),x=S.food[i];if(!x)return;const u=x.u,st=u=="g"?100:(u=="kg"||u=="L")?.5:1;x.q=Math.round((x.q+(p!==undefined?st:-st))*100)/100;if(x.q<=0)S.food.splice(i,1);render()}});
+const _r4=render;render=function(){sync();_r4();fprev()};render();
+
+})();
+
+(()=>{
+let DLG=false,dTab=null,oT=0;window.openDlg=()=>{DLG=true;dTab=S.tab;oT=Date.now()};
+const o=$("dlg");
+function dlg(){
+ const d=document.querySelector("#v .det"),use=S.tab=="h"||S.tab=="b"||S.tab=="e";
+ if(DLG&&(!use||S.tab!=dTab))DLG=false;
+ if(use&&d){
+  if(DLG){const b=document.createElement("button");b.className="dc";b.dataset.dc="1";b.setAttribute("aria-label","Cerrar");b.textContent="✕";d.prepend(b);o.replaceChildren(d)}
+  else d.remove();
+ }
+ o.classList.toggle("on",DLG);
+ if(!DLG)setTimeout(()=>{if(!DLG)o.replaceChildren()},250);
+}
+document.addEventListener("click",e=>{
+ if(e.target.closest("#dlg"))return;
+ if((S.tab=="h"||S.tab=="b")&&e.target.closest("[data-s]")){DLG=true;dTab=S.tab}
+},true);
+document.addEventListener("click",e=>{
+ if((e.target.id=="dlg"&&Date.now()-oT>450)||e.target.closest("[data-dc]")){DLG=false;dlg()}
+});
+document.addEventListener("keydown",e=>{if(e.key=="Escape"&&DLG){DLG=false;dlg()}});
+const _r5=render;render=function(){_r5();dlg()};
+render();
+})();
+
+(()=>{
+SP.skull="..kkkk../.kwwwwk./kwwwwwwk/kwkwwkwk/kwwwwwwk/.kwkkwk./.kwwwwk./..kkkk..";
+SP.axe="..kgggk./.kggggk./..kggnk./...kn.../...kn.../...kn.../...kn.../...kk...";
+IM.unshift([/calavera/,"skull"],[/machete|hacha|cuchillo/,"axe"],[/palanca|tablones|martillo|cadena|cuerda|prism|sedal|generador|depósito|semillas/,"tool"],[/torniquete|sutura/,"bandage"],[/walkie/,"radio"],[/tienda/,"blanket"],[/trueque/,"cash"],[/gafas/,"mask"]);
+Object.assign(PAL,{r:"#a3271d"});
+for(const k in IC)delete IC[k];
+$("emb").innerHTML=ic("calavera");
+render();
+})();
+
+(()=>{
+Object.assign(PAL,{k:"#1c1712",w:"#f1e7cb",g:"#6e665a",b:"#3f566b",r:"#9e1c14",y:"#a68a3a",n:"#5a4630",G:"#55603f"});
+for(const k in IC)delete IC[k];
+document.querySelector(".sb").textContent="Archivo de campo · Cómo sobrevivir a los muertos vivientes";
+$("emb").innerHTML=ic("calavera");
+render();
+})();
+
+(()=>{
+S.sq=S.sq||[];
+const RO={"Médico":"cura heridas y vigila infecciones","Mecánico":"repara vehículos, puertas y defensas","Explorador":"abre rutas y se orienta sin GPS","Cocinero":"raciona y conserva la comida","Vigía":"vigila turnos y detecta peligros","Granjero":"cultiva y asegura el agua"};
+const has=re=>I.some((it,i)=>re.test(it.n.toLowerCase())&&iv(i)>0);
+const EV=[["Corte de agua","Las tuberías se secan.",()=>[S.water>=3*S.p*S.days,S.water+" L de "+3*S.p*S.days+" L necesarios"]],
+["Asedio nocturno","Infectados rodean tu refugio.",()=>[has(/machete|palanca/)&&has(/linterna/),"Defensa cuerpo a cuerpo y luz: "+(has(/machete|palanca/)?"sí":"no")+" / "+(has(/linterna/)?"sí":"no")]],
+["Mordedura","Alguien se hiere en la huida.",()=>[bpc()>=50||S.sq.some(m=>m.r=="Médico"),"Botiquín al "+bpc()+"%"]],
+["Evacuación a medianoche","Tienes minutos para salir.",()=>{const p=pct(x=>x.s.includes(S.sc),"e");return[p>=60,"Mochila de huida al "+p+"%"]}],
+["Hambruna","Nadie ha podido salir a buscar comida.",()=>{const d=food().d;return[d>=S.days*.7,d.toFixed(1)+" días de comida de "+S.days]}],
+["Silencio en la radio","Necesitas noticias del exterior.",()=>[has(/radio/)&&has(/pilas/),"Radio y pilas: "+(has(/radio/)&&has(/pilas/)?"sí":"no")]]];
+function need(){const a=items("h").filter(x=>iv(x.i)<x.q).map(x=>"□ "+x.it.n+": faltan "+(+(x.q-iv(x.i)).toFixed(1))+" "+x.it.u);const b=BO.filter((_,i)=>!S.bk[i]).map(it=>"□ Botiquín · "+it.n+" ×"+qty(it,"h"));return a.concat(b)}
+const txt=()=>"LISTA DE EQUIPO · "+SC[S.sc]+" · "+S.p+" pers. · "+S.days+" días\n"+need().join("\n");
+function ficha(){const nd=need(),ro=Object.keys(RO),miss=ro.filter(r=>!S.sq.some(m=>m.r==r)),sm=S.sim;
+$("v").insertAdjacentHTML("beforeend",
+`<div class="pn"><h2>ESCUADRÓN · ${S.sq.length}/${S.p} reclutados</h2><div class="row"><label>Nombre<input id="zn" maxlength="20"></label><label>Rol<select id="zr">${ro.map(r=>`<option>${r}</option>`).join("")}</select></label><button data-zadd="1">+ Reclutar</button></div>`+
+S.sq.map((m,i)=>`<div class="it"><span style="flex:1"><b>${esc(m.n)}</b> · ${m.r}<br><small>${RO[m.r]}</small></span><button data-zdel="${i}">✕</button></div>`).join("")+
+(S.sq.length?miss.map(r=>`<span class="j">Falta ${r}: ${RO[r]}</span>`).join(""):"<small>Recluta a tu grupo: un equipo con roles variados dura más.</small>")+`</div>
+<div class="pn"><h2>SIMULACRO DE BROTE</h2><small>Tres sucesos al azar ponen a prueba tu equipo actual.</small>${sm?`<div style="margin-top:8px">${sm.r.map(x=>`<div class="it"><span style="flex:1"><b>${x[1]?"✓":"✗"} ${x[0]}</b><br><small>${x[2]}</small></span></div>`).join("")}<span class="j">${sm.v}</span></div>`:""}<div class="zr"><button data-zsim="1">▶ ${sm?"REPETIR":"LANZAR"} SIMULACRO</button></div></div>
+<div class="pn"><h2>LISTA DE EQUIPO · ${nd.length} pendientes</h2><small>${nd.length?nd.slice(0,5).map(esc).join("<br>")+(nd.length>5?"<br>… y "+(nd.length-5)+" más":""):"Equipo completo."}</small><div class="zr"><button data-zcp="1">COPIAR</button><button data-zsh="1">COMPARTIR</button><button data-zpr="1">IMPRIMIR</button></div></div>
+<div class="pn"><h2>MIS DATOS</h2><small>Todo se guarda solo en este dispositivo. Haz copia de seguridad para no perder tu partida.</small><div class="zr"><button data-zex="1">EXPORTAR</button><button data-zimp="1">IMPORTAR</button><button data-zrst="1">REINICIAR</button></div><input type="file" id="zf" accept=".json" hidden><small style="display:block;margin-top:8px">Obra de ficción y entretenimiento. No sustituye a las indicaciones de protección civil ni a asesoramiento médico.</small></div>`)}
+function openOB(){$("sheet").innerHTML=`<div class="sh"><h2>Bienvenido, superviviente</h2><small>Elige un perfil y empieza. Podrás cambiarlo cuando quieras.</small><div class="zr" style="flex-direction:column">${[["🧍 Solo · 7 días · en fuga","1,7,N"],["👫 Pareja · 7 días · en casa","2,7,A"],["👨‍👩‍👧‍👦 Familia (4) · 14 días · en casa","4,14,A"],["🏰 Grupo (6) · 30 días · fortaleza","6,30,Z"]].map(x=>`<button data-zpre="${x[1]}">${x[0]}</button>`).join("")}</div><p><small>Marca lo que tienes en ALMACÉN, guarda lo esencial en la MOCHILA y mide tu nivel en la FICHA. Al continuar aceptas el Aviso legal y la Política de privacidad (al pie de la página).</small></p><button id="gc" style="width:100%">Empezar</button></div>`;$("sheet").classList.add("on")}
+function prn(){let d=$("prt");if(!d){d=document.createElement("div");d.id="prt";document.body.appendChild(d)}d.innerHTML="<h1>Lista de equipo</h1><pre>"+esc(txt())+"</pre>";window.print()}
+document.addEventListener("click",e=>{const b=e.target.closest("[data-zadd],[data-zdel],[data-zsim],[data-zcp],[data-zsh],[data-zpr],[data-zex],[data-zimp],[data-zrst],[data-zpre]");if(!b)return;const d=b.dataset;
+if(d.zadd){const n=$("zn").value.trim();if(n){S.sq.push({n,r:$("zr").value});bp(660);render()}}
+if(d.zdel!==undefined){S.sq.splice(+d.zdel,1);render()}
+if(d.zsim){const r=EV.slice().sort(()=>Math.random()-.5).slice(0,3).map(x=>{const o=x[2]();return[x[0]+" · "+x[1],o[0],o[1]]}),ok=r.filter(x=>x[1]).length;
+S.sn=(S.sn||0)+1;if(ok==3)S.sw=(S.sw||0)+1;S.sim={r,v:ok==3?"SIMULACRO SUPERADO: tu equipo sale ileso.":ok==2?"SOBREVIVES CON BAJAS: refuerza lo que ha fallado.":"EL BROTE TE ALCANZA: completa tu equipo y repite."};bp(ok==3?880:300);render()}
+if(d.zcp){(navigator.clipboard?navigator.clipboard.writeText(txt()):Promise.reject()).then(()=>{b.textContent="¡COPIADO!"}).catch(()=>{b.textContent="NO SE PUDO"})}
+if(d.zsh){navigator.share?navigator.share({title:"Lista de equipo",text:txt()}).catch(()=>{}):b.previousElementSibling.click()}
+if(d.zpr)prn();
+if(d.zex){const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([JSON.stringify(S)],{type:"application/json"}));a.download="mi-refugio-partida.json";a.click()}
+if(d.zimp)$("zf").click();
+if(d.zrst&&confirm("¿Borrar todos tus datos de este dispositivo?")){try{localStorage.removeItem("tps")}catch(x){}location.reload()}
+if(d.zpre){const q=d.zpre.split(",");S.p=+q[0];S.days=+q[1];S.sc=q[2];closeG();render()}});
+document.addEventListener("change",e=>{if(e.target.id!="zf"||!e.target.files[0])return;const r=new FileReader();r.onload=()=>{try{const n=JSON.parse(r.result);for(const k in S)delete S[k];Object.assign(S,n);S.inv=S.inv||{};S.chk=S.chk||{};S.bk=S.bk||{};S.bx=S.bx||{};S.med=S.med||[];S.food=S.food||[];S.ach=S.ach||{};S.sq=S.sq||[];S.pk=S.pk||{};S.pk.L=S.pk.L||50;S.pk.pl=S.pk.pl||{};S.pk.rt=S.pk.rt||{};S.pk.n=S.pk.n||{};S.pk.st=S.pk.st||{};render()}catch(x){alert("Archivo no válido")}};r.readAsText(e.target.files[0])});
+const _r6=render;render=function(){_r6();if(S.tab=="k")ficha()};
+render();
+if(!S.ob){S.ob=1;sv();setTimeout(openOB,900)}
+})();
+
+(()=>{
+const LG={"p": ["Política de privacidad", ["<b>Titular:</b> Octopalomo · frshfilmsession@gmail.com", "<b>No recopilamos datos personales.</b> Tu inventario, ajustes y partida se guardan solo en el almacenamiento local de tu dispositivo. No hay cuentas, analítica, publicidad ni cookies de seguimiento, y no enviamos tus datos a ningún servidor.", "La app no carga fuentes, scripts ni recursos de terceros y funciona sin conexión.", "Puedes exportar tu partida a un archivo: su custodia es tuya. Para borrar todo usa Ficha › Mis datos › Reiniciar, o borra los datos de la app/navegador.", "Está pensada para mayores de 12 años. Para ejercer tus derechos o resolver dudas de privacidad escribe a frshfilmsession@gmail.com.", "Si en el futuro cambia el tratamiento de datos, lo indicaremos aquí antes de aplicarlo."]], "t": ["Aviso legal y condiciones", ["<b>Titular:</b> Octopalomo · frshfilmsession@gmail.com", "<b>Naturaleza.</b> Obra de ficción y entretenimiento, además de una herramienta orientativa para organizar un kit de preparación. No es un servicio de emergencias: ante una emergencia real llama al 112 y sigue las indicaciones de tu protección civil.", "<b>Salud.</b> No ofrece asesoramiento médico ni es un producto sanitario. Consulta a un médico o farmacéutico sobre medicación y dosis; en niños, la indica el pediatra. Sigue siempre el prospecto.", "<b>Herramientas y seguridad.</b> Algunos objetos (cuchillos, hachas, combustibles) exigen cumplir la ley local. La app no fomenta la violencia.", "<b>Sin garantías.</b> Los contenidos se ofrecen «tal cual». En la medida permitida por la ley, el titular no responde de daños derivados de su uso; ello no afecta a los derechos irrenunciables de los consumidores.", "<b>Propiedad intelectual.</b> Textos, iconos y música son originales del titular. La app no está afiliada ni respaldada por ningún autor, editorial o franquicia; cualquier marca citada pertenece a sus titulares.", "<b>Ley aplicable:</b> Catalunya (España). Los consumidores conservan el fuero que les corresponda."]]};
+document.addEventListener("click",e=>{const b=e.target.closest("[data-zlg]");if(!b)return;const g=LG[b.dataset.zlg];$("sheet").innerHTML='<div class="sh"><h2>'+g[0]+'</h2>'+g[1].map(x=>"<p>"+x+"</p>").join("")+'<button id="gc" style="width:100%">Cerrar</button></div>';$("sheet").classList.add("on")});
+document.querySelectorAll(".pn").forEach(p=>{if(/Obra de ficción/.test(p.textContent)&&!p.querySelector("[data-zlg]")&&p.children.length==1&&p.firstElementChild.tagName=="SMALL")p.insertAdjacentHTML("beforeend",'<div class="zr"><button data-zlg="p">PRIVACIDAD</button><button data-zlg="t">AVISO LEGAL</button></div>')});
+if("serviceWorker"in navigator&&location.protocol.indexOf("http")==0)navigator.serviceWorker.register("sw.js").catch(()=>{});
+})();
+
+(()=>{
+S.cons=S.cons||[];
+const st=u=>u=="g"?100:(u=="kg"||u=="L")?.5:1,N=v=>+(+v).toFixed(2);
+function pend(){
+ const A=items("h").filter(x=>iv(x.i)<x.q-1e-9).map(x=>({i:x.i,n:x.it.n,u:x.it.u,need:x.q,have:iv(x.i),ess:x.it.b=="he",w:isW(x.it)}));
+ A.sort((a,b)=>b.ess-a.ess);
+ const B=BO.map((it,i)=>({it,i})).filter(o=>!S.bk[o.i]);
+ const F=S.food.map((x,i)=>({x,i})).filter(o=>o.x.q<=0||(o.x.e&&o.x.e<dT()));
+ return{A,B,F,t:A.length+B.length+F.length}}
+const row=(a,t,btn)=>`<div class="it"><span style="flex:1">${a}</span><div class="qr">${btn}</div></div>`;
+function conseguir(){
+ const p=pend(),L=items("h"),pc=L.length?Math.round(100*L.reduce((s,x)=>s+Math.min(1,iv(x.i)/x.q),0)/L.length):100;
+ let h=`<div class="pn cg"><h2>A CONSEGUIR · ${p.t} pendientes</h2><div class="bar"><i style="width:${pc}%"></i></div><small>Almacén completado al ${pc}%. Lo que añadas en ALMACÉN desaparece de aquí.</small></div>`;
+ if(!p.t)return h+`<div class="pn"><b class="ok">✓ Todo conseguido para este plan.</b><br><small>Si cambias de plan, de personas o de días, la lista se recalcula.</small></div>`;
+ const g=(t,x)=>x.length?`<div class="pn cg"><h2>${t}</h2>`+x.join("")+"</div>":"";
+ const ia=a=>row(`<b class="nm">${a.n}</b><br><span class="q">Faltan ${N(a.need-a.have)} ${a.u}</span> <small>(tienes ${N(a.have)} de ${a.need})</small>`,0,`<button data-zga="${a.i}" data-zs="${a.w?1.5:1}">+${a.w?"1,5":1}</button><button data-zgc="${a.i}">COMPLETAR</button>`);
+ h+=g("ESENCIALES",p.A.filter(a=>a.ess).map(ia))+g("COMPLEMENTARIOS",p.A.filter(a=>!a.ess).map(ia));
+ h+=g("BOTIQUÍN",p.B.map(o=>row(`<b class="nm">${o.it.n}</b><br><span class="q">× ${qty(o.it,"h")} ${o.it.u}</span>`,0,`<button data-zgb="${o.i}">LO TENGO</button>`)));
+ h+=g("DESPENSA",p.F.map(o=>row(`<b class="nm">${esc(o.x.n)}</b><br><span class="q">${o.x.q<=0?"Agotado: reponer":(o.x.e<dT()?"Caducado: sustituir":"Caduca pronto")}</span>`,0,`<button data-t="f">IR A DESPENSA</button>`)));
+ $("v").innerHTML=h}
+function desp(){
+ const ps=$("v").querySelectorAll(".pn"),l=ps[ps.length-1];if(!l)return;
+ let h=S.food.length?S.food.map((x,i)=>`<div class="it" style="flex-wrap:wrap"><span style="flex:1 1 100%"><b>${esc(x.n)}</b> · <span class="q">${N(x.q)} ${x.u||"ud"}</span>${x.q<=0?' <b style="color:var(--r)">AGOTADO</b>':""}<br><small>${Math.round(x.q*x.k)} kcal${x.e?" · cad. "+x.e:""}</small>${x.e&&x.e<dS()?'<span class="j" style="border-color:var(--r);color:var(--r)">'+(x.e<dT()?"CADUCADO":"Caduca en menos de 30 días")+"</span>":""}</span><div class="qr" style="flex:1 1 100%;justify-content:flex-start"><input type="number" min="0" step="any" inputmode="decimal" value="${st(x.u)}" data-za="${i}" aria-label="Cantidad"><button data-zc="${i}">CONSUMIR</button><button data-zr="${i}">+ REPONER</button><button data-x="${i}" aria-label="Eliminar">✕</button></div></div>`).join(""):"<small>Aún no has registrado alimentos.</small>";
+ if(S.cons.length)h+='<h2 style="margin-top:14px">CONSUMO RECIENTE</h2>'+S.cons.slice(-6).reverse().map(c=>`<div class="zlog">${new Date(c.t).toLocaleDateString("es-ES",{day:"2-digit",month:"short"})} · ${esc(c.n)} −${N(c.a)} ${c.u}</div>`).join("");
+ l.innerHTML=h}
+document.addEventListener("click",e=>{const b=e.target.closest("[data-zc],[data-zr],[data-zga],[data-zgc],[data-zgb]");if(!b)return;const d=b.dataset;
+ if(d.zc!==undefined||d.zr!==undefined){const i=+(d.zc!==undefined?d.zc:d.zr),x=S.food[i],inp=document.querySelector('[data-za="'+i+'"]'),a=+(inp&&inp.value)||0;if(!x||!(a>0))return;
+  if(d.zc!==undefined){const u=Math.min(a,x.q);if(u<=0)return;x.q=N(x.q-u);S.cons.push({n:x.n,a:u,u:x.u||"ud",t:Date.now()});if(S.cons.length>40)S.cons.shift();bp(300)}else{x.q=N(x.q+a);bp(660)}
+  render();return}
+ if(d.zga!==undefined){setIv(+d.zga,iv(+d.zga)+(+b.dataset.zs||1));bp(660);render()}
+ if(d.zgc!==undefined){const f=items("h").find(x=>x.i==+d.zgc);if(f){setIv(f.i,f.q);bp(880)}render()}
+ if(d.zgb!==undefined){S.bk[d.zgb]=true;bp(880);render()}});
+const _r7=render;render=function(){_r7();if(S.tab=="f")desp();if(S.tab=="g")conseguir();const t=pend().t,b=document.querySelector('#tabs [data-t="g"]');if(b&&t)b.insertAdjacentHTML("beforeend",'<span class="bg">'+t+"</span>")};
+render();
+})();
+
+(()=>{
+const LG=[["es","ES"],["en","EN"],["ca","CA"],["de","DE"],["zh","中文"],["ja","日本語"],["ru","RU"]];
+const D=new Map(`Supervivientes|Survivors|Supervivents|Überlebende|幸存者|生存者|Выжившие
+Mascotas|Pets|Mascotes|Haustiere|宠物|ペット|Питомцы
+Resistencia|Endurance|Resistència|Ausdauer|坚持时长|持久期間|Выживание
+Plan|Plan|Pla|Plan|方案|プラン|План
+días|days|dies|Tage|天|日|дней
+Atrincherado|Barricaded|Atrinxerat|Verschanzt|据守|籠城|Оборона
+En fuga|On the run|En fugida|Auf der Flucht|逃亡|逃走中|В бегах
+Refugio remoto|Remote shelter|Refugi remot|Abgelegener Unterschlupf|偏远避难所|辺境の避難所|Дальнее укрытие
+Fortaleza|Fortress|Fortalesa|Festung|堡垒|要塞|Крепость
+Todo|All|Tot|Alles|全部|すべて|Всё
+Almacén|Stock|Magatzem|Lager|储备|備蓄|Склад
+Inventario|Inventory|Inventari|Inventar|库存|在庫|Инвентарь
+Mochila|Backpack|Motxilla|Rucksack|背包|リュック|Рюкзак
+Botiquín|First aid|Farmaciola|Erste Hilfe|急救包|救急箱|Аптечка
+Despensa|Pantry|Rebost|Vorrat|食品柜|食料庫|Кладовая
+A conseguir|To get|Per aconseguir|Zu besorgen|待获取|入手待ち|Достать
+Ficha|Profile|Fitxa|Profil|档案|プロフィール|Досье
+Infectado|Infected|Infectat|Infiziert|已感染|感染|Заражён
+En riesgo|At risk|En risc|Gefährdet|危险|危険|В опасности
+A salvo|Safe|Salvat|In Sicherheit|安全|安全|В безопасности
+Archivo de campo|Field file|Arxiu de camp|Feldakte|野外档案|フィールド記録|Полевое досье
+Cómo sobrevivir a los muertos vivientes|How to survive the living dead|Com sobreviure als morts vivents|Wie man die Untoten überlebt|如何在行尸中生存|ゾンビから生き延びる方法|Как пережить живых мертвецов
+Arrastra ↓|Drag ↓|Arrossega ↓|Ziehen ↓|拖动 ↓|ドラッグ ↓|Тяни ↓
+Por meter|To pack|Per posar|Zu packen|待装入|未収納|Не уложено
+Auto-ordenar|Auto-sort|Auto-ordena|Autom. sortieren|自动整理|自動整理|Авто-укладка
+Vaciar|Empty|Buida|Leeren|清空|空にする|Очистить
+Rotar|Rotate|Gira|Drehen|旋转|回転|Повернуть
+Sacar|Remove|Treu|Entfernen|取出|取り出す|Достать
+Ocupa|Takes|Ocupa|Belegt|占用|占有|Занимает
+slots|slots|slots|Felder|格|マス|ячеек
+Llevas|You carry|Portes|Du trägst|携带|所持|Берёшь
+Necesitas|You need|Necessites|Du brauchst|需要|必要|Нужно
+En mochila|In pack|A la motxilla|Im Rucksack|已装包|収納済み|В рюкзаке
+Parcial|Partial|Parcial|Teilweise|部分|一部|Частично
+Completo|Complete|Complet|Komplett|完整|完了|Полностью
+Falta|Missing|Falta|Fehlt|缺少|不足|Нет
+Equipado|Equipped|Equipat|Ausgerüstet|已装备|装備済み|Есть
+Lo tengo|I have it|Ja ho tinc|Hab ich|已有|持っている|Есть у меня
+Ir al inventario|Go to inventory|Ves a l'inventari|Zum Inventar|前往库存|在庫へ|К инвентарю
+Añadir|Add|Afegeix|Hinzufügen|添加|追加|Добавить
+Cerrar|Close|Tanca|Schließen|关闭|閉じる|Закрыть
+Consejo|Tip|Consell|Tipp|提示|ヒント|Совет
+Otro consejo|Another tip|Un altre consell|Anderer Tipp|换一条|別のヒント|Другой совет
+Briefing|Briefing|Informe|Briefing|简报|ブリーフィング|Брифинг
+Objetivo|Objective|Objectiu|Ziel|目标|目標|Цель
+Misión cumplida|Mission complete|Missió complerta|Mission erfüllt|任务完成|ミッション達成|Миссия выполнена
+Rango|Rank|Rang|Rang|等级|ランク|Ранг
+Caduca|Expires|Caduca|Läuft ab|到期|期限|Срок`.split("\n").map(l=>{const a=l.split("|");return[a[0].toLowerCase(),a.slice(1)]}));
+`Agua potable|Drinking water|Aigua potable|Trinkwasser|饮用水|飲料水|Питьевая вода
+Comida enlatada o que no necesita cocinar|Canned or no-cook food|Menjar en conserva o que no cal cuinar|Konserven oder Essen ohne Kochen|罐头或免煮食品|缶詰や調理不要の食料|Консервы и еда без готовки
+Pastillas potabilizadoras|Water purification tablets|Pastilles potabilitzadores|Wasserreinigungstabletten|净水片|浄水タブレット|Таблетки для очистки воды
+Filtro de agua portátil|Portable water filter|Filtre d'aigua portàtil|Tragbarer Wasserfilter|便携净水器|携帯浄水フィルター|Портативный фильтр для воды
+Machete o hacha de campo|Machete or field axe|Matxet o destral de camp|Machete oder Feldaxt|砍刀或野战斧|ナタまたは野営用斧|Мачете или полевой топор
+Palanca (pie de cabra)|Crowbar|Palanca (peu de cabra)|Brecheisen|撬棍|バール|Лом
+Cuchillo de monte|Hunting knife|Ganivet de muntanya|Jagdmesser|野外刀|ハンティングナイフ|Охотничий нож
+Ropa gruesa de manga larga|Thick long-sleeve clothing|Roba gruixuda de màniga llarga|Dicke langärmlige Kleidung|厚长袖衣物|厚手の長袖服|Плотная одежда с длинным рукавом
+Guantes de trabajo|Work gloves|Guants de feina|Arbeitshandschuhe|工作手套|作業用手袋|Рабочие перчатки
+Botas robustas|Sturdy boots|Botes robustes|Robuste Stiefel|结实的靴子|丈夫なブーツ|Прочные ботинки
+Gafas de protección|Safety glasses|Ulleres de protecció|Schutzbrille|护目镜|保護メガネ|Защитные очки
+Mascarillas FFP2|FFP2 masks|Mascaretes FFP2|FFP2-Masken|FFP2口罩|FFP2マスク|Маски FFP2
+Mascarillas|Masks|Mascaretes|Masken|口罩|マスク|Маски
+Linterna o frontal|Flashlight or headlamp|Llanterna o frontal|Taschen- oder Stirnlampe|手电筒或头灯|懐中電灯またはヘッドライト|Фонарь или налобный фонарь
+Pilas de repuesto|Spare batteries|Piles de recanvi|Ersatzbatterien|备用电池|予備の電池|Запасные батарейки
+Radio de pilas o manivela|Battery or crank radio|Ràdio de piles o maneta|Batterie- oder Kurbelradio|电池或手摇收音机|電池式または手回しラジオ|Радио на батарейках или с ручкой
+Walkie-talkies|Walkie-talkies|Walkie-talkies|Walkie-Talkies|对讲机|トランシーバー|Рации
+Prismáticos|Binoculars|Prismàtics|Fernglas|望远镜|双眼鏡|Бинокль
+Mapa de papel y brújula|Paper map and compass|Mapa de paper i brúixola|Papierkarte und Kompass|纸质地图和指南针|紙の地図とコンパス|Бумажная карта и компас
+Medicación habitual|Regular medication|Medicació habitual|Regelmäßige Medikamente|常用药|常用薬|Постоянные лекарства
+Manta o saco de dormir|Blanket or sleeping bag|Manta o sac de dormir|Decke oder Schlafsack|毯子或睡袋|毛布または寝袋|Одеяло или спальник
+Tienda de campaña|Tent|Tenda de campanya|Zelt|帐篷|テント|Палатка
+Mechero y cerillas|Lighter and matches|Encenedor i llumins|Feuerzeug und Streichhölzer|打火机和火柴|ライターとマッチ|Зажигалка и спички
+Cinta americana|Duct tape|Cinta americana|Panzerband|强力胶带|ガムテープ|Скотч
+Cuerda resistente|Strong rope|Corda resistent|Starkes Seil|结实的绳子|丈夫なロープ|Прочная верёвка
+Tablones, clavos y martillo|Planks, nails and hammer|Taulons, claus i martell|Bretter, Nägel und Hammer|木板、钉子和锤子|板・釘・ハンマー|Доски, гвозди и молоток
+Cadena y candados|Chain and padlocks|Cadena i cadenats|Kette und Vorhängeschlösser|锁链和挂锁|チェーンと南京錠|Цепь и замки
+Bolsas de basura|Trash bags|Bosses d'escombraries|Müllbeutel|垃圾袋|ゴミ袋|Мусорные мешки
+Hornillo y cartuchos de gas|Stove and gas cartridges|Fogonet i cartutxos de gas|Kocher und Gaskartuschen|炉具和燃气罐|コンロとガスカートリッジ|Горелка и газовые баллоны
+Objetos de trueque (pilas, sal, medicinas)|Barter goods (batteries, salt, medicine)|Objectes de trispol (piles, sal, medicines)|Tauschwaren (Batterien, Salz, Medizin)|易货物品（电池、盐、药品）|物々交換品（電池・塩・薬）|Предметы для обмена (батарейки, соль, лекарства)
+Documentos y copias|Documents and copies|Documents i còpies|Dokumente und Kopien|文件和复印件|書類とコピー|Документы и копии
+Plan de grupo (punto de encuentro y señales)|Group plan (meeting point and signals)|Pla de grup (punt de trobada i senyals)|Gruppenplan (Treffpunkt und Signale)|团队计划（集合点和信号）|グループ計画（集合場所と合図）|План группы (место встречи и сигналы)
+Silbato|Whistle|Xiulet|Pfeife|哨子|笛|Свисток
+Libro de supervivencia|Survival book|Llibre de supervivència|Überlebensbuch|生存手册|サバイバル本|Книга по выживанию
+Comida y agua para mascotas|Pet food and water|Menjar i aigua per a mascotes|Futter und Wasser für Haustiere|宠物食物和水|ペットの食料と水|Еда и вода для питомцев
+Generador y combustible|Generator and fuel|Generador i combustible|Generator und Treibstoff|发电机和燃料|発電機と燃料|Генератор и топливо
+Semillas y herramientas de huerto|Seeds and garden tools|Llavors i eines d'hort|Saatgut und Gartenwerkzeug|种子和园艺工具|種と菜園道具|Семена и садовые инструменты
+Depósito de agua de lluvia|Rainwater tank|Dipòsit d'aigua de pluja|Regenwassertank|雨水箱|雨水タンク|Бак для дождевой воды
+Sedal y anzuelos|Fishing line and hooks|Fil de pescar i ham|Angelschnur und Haken|鱼线和鱼钩|釣り糸と針|Леска и крючки
+Botella de agua (1,5 L)|Water bottle (1.5 L)|Ampolla d'aigua (1,5 L)|Wasserflasche (1,5 L)|水瓶（1.5升）|水ボトル（1.5L）|Бутылка воды (1,5 л)`.split("\n").forEach(l=>{const a=l.split("|");D.set(a[0].toLowerCase(),a.slice(1))});
+`Hay que destruir el cerebro: apunta a la cabeza o no sirve.|You must destroy the brain: aim for the head or it won't work.|Cal destruir el cervell: apunta al cap o no serveix.|Man muss das Gehirn zerstören: Ziel auf den Kopf, sonst nützt es nichts.|必须摧毁大脑：瞄准头部，否则无效。|脳を破壊しなければならない。頭を狙わないと効果がない。|Нужно уничтожить мозг: целься в голову, иначе всё бесполезно.
+Sin agua no hay plan. Almacénala antes que nada.|No water, no plan. Stock it before anything else.|Sense aigua no hi ha pla. Emmagatzema-la abans que res.|Ohne Wasser kein Plan. Lagere es vor allem anderen.|没有水就没有计划。先囤水。|水がなければ計画は成り立たない。まず水を備蓄しよう。|Без воды нет плана. Запасай её прежде всего.
+Evita las ciudades: cuanta más gente, más muertos.|Avoid cities: the more people, the more dead.|Evita les ciutats: com més gent, més morts.|Meide Städte: je mehr Menschen, desto mehr Tote.|远离城市：人越多，死者越多。|都市は避けよう。人が多いほど死者も多い。|Избегай городов: чем больше людей, тем больше мертвецов.
+Conoce dos salidas de cada habitación.|Know two exits from every room.|Coneix dues sortides de cada habitació.|Kenne zwei Ausgänge in jedem Raum.|了解每个房间的两个出口。|どの部屋でも出口を二つ把握しよう。|Знай два выхода из каждой комнаты.
+Las armas silenciosas atraen menos atención.|Silent weapons draw less attention.|Les armes silencioses atrauen menys atenció.|Leise Waffen ziehen weniger Aufmerksamkeit an.|无声武器引来的注意更少。|静かな武器は注目を集めにくい。|Бесшумное оружие привлекает меньше внимания.
+Un arma que no se recarga nunca se queda sin munición.|A weapon that needs no reloading never runs out of ammo.|Una arma que no es recarrega mai es queda sense munició.|Eine Waffe ohne Nachladen hat nie keine Munition.|不需要装弹的武器永远不会没子弹。|装填のいらない武器は弾切れしない。|Оружие, которое не надо перезаряжать, никогда не останется без патронов.
+Nunca viajes solo si puedes evitarlo.|Never travel alone if you can avoid it.|No viatgis mai sol si pots evitar-ho.|Reise nie allein, wenn es sich vermeiden lässt.|尽量不要独自出行。|できるだけ一人で移動しない。|Не путешествуй в одиночку, если можно избежать.
+Mantén la calma: el pánico mata antes que el virus.|Stay calm: panic kills before the virus does.|Mantén la calma: el pànic mata abans que el virus.|Bleib ruhig: Panik tötet eher als das Virus.|保持冷静：恐慌比病毒更致命。|落ち着いて。パニックはウイルスより先に命を奪う。|Сохраняй спокойствие: паника убивает раньше вируса.
+El virus se contagia por mordisco: cualquier herida debe tratarse y vigilarse.|The virus spreads by bite: treat and monitor any wound.|El virus es contagia per mossegada: qualsevol ferida s'ha de tractar i vigilar.|Das Virus wird durch Bisse übertragen: Jede Wunde behandeln und beobachten.|病毒通过咬伤传播：任何伤口都要处理并观察。|ウイルスは噛まれて感染する。どんな傷も手当てして経過を見よう。|Вирус передаётся укусом: любую рану нужно обработать и наблюдать.
+No pelees si puedes huir. Cada enfrentamiento arriesga una mordedura.|Don't fight if you can flee. Every fight risks a bite.|No lluitis si pots fugir. Cada enfrontament arrisca una mossegada.|Kämpfe nicht, wenn du fliehen kannst. Jeder Kampf riskiert einen Biss.|能逃就别打。每次搏斗都有被咬的风险。|逃げられるなら戦わない。戦いは噛まれる危険がある。|Не дерись, если можно убежать. Каждая схватка — риск укуса.
+Fija un punto de encuentro y señales acordadas con tu grupo.|Set a meeting point and agreed signals with your group.|Fixa un punt de trobada i senyals acordats amb el teu grup.|Lege mit deiner Gruppe einen Treffpunkt und Signale fest.|与团队约定集合点和信号。|グループで集合場所と合図を決めておこう。|Определи с группой место встречи и сигналы.
+Lleva cosas útiles para trueque: el dinero deja de valer.|Carry useful items to barter: money stops being worth anything.|Porta coses útils per al trispol: els diners deixen de valer.|Nimm nützliche Tauschwaren mit: Geld verliert seinen Wert.|携带可用于易货的物品：钱会失去价值。|物々交換に使える物を持とう。お金は価値を失う。|Бери полезное для обмена: деньги обесценятся.
+En la ficción, el ruido atrae a los muertos: prefiere herramientas silenciosas y ligeras.|In fiction, noise attracts the dead: prefer quiet, light tools.|En la ficció, el soroll atrau els morts: prefereix eines silencioses i lleugeres.|In der Fiktion zieht Lärm die Toten an: Bevorzuge leise, leichte Werkzeuge.|在虚构中，噪音会引来死者：选择安静轻便的工具。|フィクションでは音が死者を引き寄せる。静かで軽い道具を選ぼう。|В фантастике шум привлекает мертвецов: выбирай тихие и лёгкие инструменты.
+Refuerza solo un acceso principal y deja una salida de escape discreta.|Reinforce only one main entrance and leave a discreet escape exit.|Reforça només un accés principal i deixa una sortida d'escapament discreta.|Sichere nur einen Haupteingang und lass einen unauffälligen Fluchtweg.|只加固一个主入口，并留一个隐蔽的逃生口。|主な出入口は一つだけ補強し、目立たない脱出口を残そう。|Укрепляй только один главный вход и оставь скрытый запасной выход.
+Almacena agua primero y comida que no necesite cocinar.|Store water first, then food that needs no cooking.|Emmagatzema primer aigua i després menjar que no calgui cuinar.|Lagere zuerst Wasser und dann Essen ohne Kochen.|先囤水，再囤免煮食物。|まず水、次に調理不要の食料を備蓄しよう。|Сначала запасай воду, затем еду без готовки.
+Evita luces visibles desde fuera: tapa las ventanas.|Avoid lights visible from outside: cover the windows.|Evita llums visibles des de fora: tapa les finestres.|Vermeide von außen sichtbares Licht: Fenster abdecken.|避免外面可见的灯光：遮住窗户。|外から見える明かりは避け、窓を覆おう。|Избегай света, видимого снаружи: закрой окна.
+Una mochila de huida: agua, calzado, mapa, botiquín y un arma ligera.|A bug-out bag: water, footwear, map, first aid kit and a light weapon.|Una motxilla de fugida: aigua, calçat, mapa, farmaciola i una arma lleugera.|Ein Fluchtrucksack: Wasser, Schuhe, Karte, Erste-Hilfe-Set und eine leichte Waffe.|逃生背包：水、鞋、地图、急救包和一件轻便武器。|脱出用リュック：水、靴、地図、救急箱、軽い武器。|Тревожный рюкзак: вода, обувь, карта, аптечка и лёгкое оружие.
+Prueba tu mochila: si no puedes correr 1 km con ella, es demasiado pesada.|Test your pack: if you can't run 1 km with it, it's too heavy.|Prova la teva motxilla: si no pots córrer 1 km amb ella, pesa massa.|Teste deinen Rucksack: Wenn du damit nicht 1 km rennen kannst, ist er zu schwer.|测试你的背包：背着它跑不了1公里就太重了。|リュックを試そう。背負って1km走れないなら重すぎる。|Проверь рюкзак: если не можешь пробежать с ним 1 км, он слишком тяжёлый.
+Limpia siempre las heridas con agua y antiséptico y revísalas cada día.|Always clean wounds with water and antiseptic and check them daily.|Neteja sempre les ferides amb aigua i antisèptic i revisa-les cada dia.|Reinige Wunden immer mit Wasser und Desinfektionsmittel und kontrolliere sie täglich.|始终用水和消毒剂清洗伤口，并每天检查。|傷は必ず水と消毒薬で洗い、毎日確認しよう。|Всегда промывай раны водой и антисептиком и проверяй ежедневно.
+Revisa caducidades cada 6 meses y no mezcles medicación de distintas personas.|Check expiry dates every 6 months and don't mix different people's medication.|Revisa les caducitats cada 6 mesos i no barregis medicació de persones diferents.|Prüfe alle 6 Monate die Haltbarkeit und vermische keine Medikamente verschiedener Personen.|每6个月检查一次有效期，不要混用不同人的药品。|6か月ごとに期限を確認し、他の人の薬と混ぜない。|Проверяй сроки годности раз в 6 месяцев и не смешивай лекарства разных людей.
+Rota la despensa: consume lo más antiguo y repón.|Rotate your pantry: use the oldest first and restock.|Rota el rebost: consumeix el més antic i reposa.|Rotiere den Vorrat: Zuerst das Älteste verbrauchen und auffüllen.|轮换食品：先吃最旧的并及时补充。|備蓄は循環させ、古い物から使って補充しよう。|Ротация запасов: сначала старое, затем пополняй.
+Planifica a largo plazo: las latas se acaban, un huerto no.|Plan for the long term: cans run out, a garden doesn't.|Planifica a llarg termini: les llaunes s'acaben, un hort no.|Plane langfristig: Dosen gehen zur Neige, ein Garten nicht.|做长远打算：罐头会吃完，菜园不会。|長期で考えよう。缶詰はなくなるが、菜園は続く。|Планируй надолго: консервы кончаются, огород — нет.
+Revisa tu equipo cada mes: el estado importa más que el porcentaje.|Check your gear every month: condition matters more than percentage.|Revisa el teu equip cada mes: l'estat importa més que el percentatge.|Prüfe deine Ausrüstung monatlich: Der Zustand zählt mehr als der Prozentsatz.|每月检查装备：状态比百分比更重要。|毎月装備を点検しよう。割合より状態が大切。|Проверяй снаряжение каждый месяц: состояние важнее процентов.
+Manual de campo|Field manual|Manual de camp|Feldhandbuch|野外手册|フィールドマニュアル|Полевое руководство
+Buenas prácticas|Best practices|Bones pràctiques|Bewährte Praxis|最佳实践|ベストプラクティス|Лучшие практики`.split("\n").forEach(l=>{const a=l.split("|");D.set(a[0].toLowerCase(),a.slice(1))});
+const orig=new WeakMap(),last=new WeakMap();let raf=0;
+const li=()=>Math.max(0,LG.findIndex(l=>l[0]==S.lang));
+function tr(s,i){if(!i)return s;return s.split(/( · )/).map(q=>{const w=D.get(q.trim().toLowerCase());return w?w[i-1]:q.split(/(: )/).map(p=>{const m=p.match(/^([^\p{L}]*)([\s\S]*?)([^\p{L}]*)$/u);if(!m||!m[2])return p;let y=m[3],v=D.get((m[2]+y).toLowerCase());if(v)y="";else v=D.get(m[2].toLowerCase());if(!v)return p;let r=v[i-1];if(m[2]==m[2].toUpperCase()&&m[2]!=m[2].toLowerCase())r=r.toUpperCase();return m[1]+r+y}).join("")}).join("")}
+function run(){const i=li(),w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{acceptNode:n=>n.parentNode&&/^(SCRIPT|STYLE|NOSCRIPT)$/.test(n.parentNode.tagName)?2:1});let n;
+while(n=w.nextNode()){let o=orig.get(n);if(o===undefined||n.data!==last.get(n)){o=n.data;orig.set(n,o)}const t=tr(o,i);if(t!==n.data)n.data=t;last.set(n,t)}
+document.documentElement.lang=LG[i][0];document.querySelectorAll("#lgr button").forEach(b=>b.classList.toggle("on",b.dataset.lg==LG[i][0]))}
+new MutationObserver(()=>{cancelAnimationFrame(raf);raf=requestAnimationFrame(run)}).observe(document.body,{childList:true,subtree:true,characterData:true});
+document.querySelector("header.hd").insertAdjacentHTML("afterend",'<div class="lgr" id="lgr">'+LG.map(l=>`<button data-lg="${l[0]}">${l[1]}</button>`).join("")+"</div>");
+$("gd").insertAdjacentHTML("beforebegin",'<button id="nm" class="gb" aria-label="Night">🌙</button>');
+function night(){document.body.classList.toggle("night",!!S.night);$("nm").textContent=S.night?"☀️":"🌙";const m=document.querySelector("meta[name=theme-color]");if(m)m.content=S.night?"#15130f":"#1f1a14"}
+document.addEventListener("click",e=>{const b=e.target.closest("[data-lg],#nm");if(!b)return;if(b.id=="nm"){S.night=!S.night;night()}else{S.lang=b.dataset.lg;run()}sv()});
+night();run();
+})();
+</script><script>
+(()=>{
+const T=s=>s==null?"":String(s),q=s=>T(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const gp=()=>{const g=S.gp=S.gp||{};g.m=g.m||[];return g};
+const FLD=[["name","Nombre del grupo"],["lead","Responsable / quien decide"],["meet1","Punto de encuentro 1 (cerca de casa)",1],["meet2","Punto de encuentro 2 (alternativo)",1],["meet3","Punto de encuentro lejano (fuera de la zona)",1],["route","Rutas de salida",1],["sig","Señal o contraseña del grupo"],["wait","Tiempo máximo de espera en cada punto"],["water","Puntos de agua conocidos",1],["store","Dónde está el material (mochilas, botiquín)",1],["far","Contacto fuera de la zona (nombre y teléfono)"],["rules","Qué hacer si nos separamos",1]];
+const PA=[["Antes de actuar",["Protege: comprueba que la zona es segura para ti y para el herido.","Avisa: llama al 112 y di dónde estás, qué ha pasado y cuántos heridos hay.","Socorre: háblale y sacúdele suavemente los hombros. Si no responde y no respira con normalidad, empieza la RCP."]],
+["RCP en adultos",["Pide que traigan un desfibrilador (DEA) y llama al 112.","Manos entrelazadas en el centro del pecho, brazos rectos, comprime 5-6 cm a un ritmo de 100-120 por minuto y deja que el pecho vuelva a subir.","Ciclos de 30 compresiones y 2 insuflaciones. Si no sabes o no quieres insuflar, haz solo compresiones sin parar.","Usa el DEA en cuanto llegue y sigue sus indicaciones. No pares hasta que respire, llegue ayuda o te agotes."]],
+["RCP en niños y lactantes",["Empieza con 5 insuflaciones y sigue con ciclos de 30:2.","En lactantes comprime con dos dedos, hundiendo un tercio del tórax. Si estás solo, llama al 112 tras 1 minuto de RCP."]],
+["Atragantamiento",["Si tose con fuerza, anímale a seguir tosiendo y no le golpees.","Si no puede toser, hablar ni respirar: 5 golpes secos en la espalda entre los omóplatos y 5 compresiones abdominales (Heimlich). Alterna hasta que expulse el objeto.","Embarazadas y personas obesas: compresiones en el centro del pecho. Lactantes: 5 golpes en la espalda y 5 compresiones en el pecho, nunca Heimlich.","Si pierde la consciencia, empieza la RCP y llama al 112."]],
+["Hemorragias",["Presión directa y firme con gasa o tela limpia. No la retires: si se empapa, añade más encima.","Eleva la extremidad si es posible y haz un vendaje compresivo.","Torniquete solo en brazos o piernas cuando la presión no basta: 5-7 cm por encima de la herida, aprieta hasta que pare, anota la hora y no lo aflojes."]],
+["Heridas y mordeduras",["Lava con agua y jabón abundante al menos 5 minutos, seca, aplica antiséptico y cubre.","Toda mordedura (persona o animal) debe verla un médico por riesgo de infección. Comprueba que tienes al día la vacuna del tétanos.","Vigila enrojecimiento, hinchazón, pus o fiebre en los días siguientes."]],
+["Quemaduras",["Enfría con agua corriente fresca (no helada) 10-20 minutos y retira anillos y ropa no pegada.","No uses hielo, cremas ni aceites y no revientes las ampollas. Cubre con gasa estéril o film sin apretar.","Urgente si es extensa, profunda, en cara, manos o genitales, o eléctrica o química."]],
+["Fracturas y esguinces",["Inmoviliza en la postura en que lo encuentres, sin intentar recolocar el hueso.","Férula improvisada que incluya la articulación de arriba y la de abajo. Frío envuelto en tela 20 minutos.","Revisa que los dedos siguen calientes y con sensibilidad. Ante sospecha de lesión de columna, no muevas a la persona."]],
+["Shock",["Piel pálida y fría, sudor, pulso rápido, confusión. Llama al 112.","Tumba a la persona, eleva las piernas si no hay lesión de cabeza, columna o piernas, abrígala y no le des de beber."]],
+["Calor y frío",["Golpe de calor: sombra, ropa fuera, enfriar con agua y ventilar, sorbos de agua si está consciente y 112.","Hipotermia: quita la ropa húmeda, abriga con mantas (cabeza incluida), bebidas dulces tibias si está consciente. Muévela con cuidado, no la frotes y no des alcohol."]],
+["Deshidratación y diarrea",["Suero casero: 1 litro de agua potable, 6 cucharaditas rasas de azúcar y media de sal. Beber a sorbos frecuentes.","Si hay vómitos que no cesan, sangre en las heces o confusión, busca ayuda médica."]],
+["Botiquín básico",["Gasas estériles, vendas, esparadrapo, tijeras, pinzas, guantes, mascarillas, suero fisiológico, antiséptico, manta térmica, termómetro, torniquete.","Analgésico habitual y tu medicación personal para al menos 7 días. Revisa caducidades cada mes."]],
+["Llama al 112 si hay",["Inconsciencia, dolor en el pecho, dificultad para respirar, hemorragia grave, convulsiones de más de 5 minutos, quemaduras graves, sospecha de lesión de columna.","Ictus: cara caída, brazo sin fuerza o habla confusa. Cada minuto cuenta."]]];
+const SV=[["La regla de los 3",["Sin aire sobrevives unos 3 minutos, sin refugio frente al frío o calor extremo unas 3 horas, sin agua unos 3 días y sin comida unas 3 semanas. Prioriza en ese orden."]],
+["Mentalidad",["Para, respira y evalúa antes de actuar. Haz un plan sencillo, repártelo en tareas y revísalo cada día.","Descansa, come y bebe aunque no tengas ganas: los errores llegan con el agotamiento."]],
+["Agua",["Calcula 3 litros por persona y día entre beber, cocinar e higiene.","Potabiliza: hierve 1 minuto (3 por encima de 2.000 m), usa pastillas siguiendo al fabricante o un filtro portátil. Si está turbia, filtra antes con una tela.","Lejía sin aditivos: 2 gotas por litro y esperar 30 minutos.","En un corte, aprovecha el depósito del calentador y la cisterna. No bebas agua de mar ni orina."]],
+["Comida",["Reserva raciones que no necesiten cocinar ni nevera y rota por caducidad. Unas 2.000 kcal por persona y día.","Consume primero lo perecedero. No comas plantas ni setas que no conozcas."]],
+["Refugio y temperatura",["Aíslate del suelo, vístete por capas y evita sudar. Una manta térmica pesa poco y ayuda mucho.","Nunca uses hornillos, braseros ni generadores en espacios cerrados: el monóxido de carbono mata sin avisar."]],
+["Luz y fuego",["Linternas y frontales mejor que velas. Lleva pilas de repuesto, mechero y cerillas en bolsa estanca.","Si haces fuego, hazlo en exterior, sobre suelo despejado, sin dejarlo solo y con agua cerca."]],
+["Orientación y evacuación",["Mapa en papel y brújula, con dos rutas de salida desde cada punto.","Sigue las instrucciones de protección civil y no cruces zonas inundadas.","La mochila no debería superar el 20% de tu peso. Calzado cómodo y ya usado."]],
+["Señales y comunicación",["Radio de pilas o manivela para recibir avisos. El 112 funciona aunque no tengas saldo.","Tres pitidos, tres destellos o tres golpes seguidos significan socorro.","Acordad un punto de encuentro y una señal antes de que haga falta."]],
+["Higiene y salud",["Lávate las manos antes de comer y tras ir al baño. Si no hay agua, usa gel hidroalcohólico.","Letrina a más de 30 m de cualquier fuente de agua y basura en bolsas cerradas.","Cura cualquier herida cuanto antes. Ten medicación para al menos 7 días."]],
+["Apagón",["Mantén cerrados nevera y congelador: la nevera aguanta unas 4 horas y el congelador lleno entre 24 y 48.","Desenchufa aparatos sensibles, ten powerbank cargado, efectivo en billetes pequeños y el depósito del coche por encima de la mitad."]],
+["En grupo",["Reparte roles (salud, agua, comida, vigilancia, comunicación) y haced turnos.","Una sola persona decide en caso de duda. Racionad desde el primer día y evitad riesgos innecesarios.","Cumple siempre la normativa local sobre el porte y uso de herramientas."]]];
+const MAN={pa:["Manual de primeros auxilios",PA,"Orientación general. No sustituye a un curso de primeros auxilios ni a los servicios de emergencia: ante una urgencia real llama al 112."],sv:["Manual de supervivencia",SV,"Orientación general basada en recomendaciones habituales de protección civil. En una emergencia real sigue las indicaciones de las autoridades y llama al 112."]};
+function mkpdf(L,title){const W=595,H=842,M=48,cv=document.createElement("canvas").getContext("2d"),ST={t:[20,"bold",28],h:[13,"bold",22],p:[10.5,"",15],l:[10.5,"",15],s:[9,"",13]},pg=[[]];let y=H-M;
+const lat=s=>s.replace(/[\u2018\u2019]/g,"'").replace(/[\u201C\u201D]/g,'"').replace(/[\u2013\u2014]/g,"-").replace(/[^\x20-\x7E\xA1-\xFF]/g,""),es=s=>s.replace(/[\\()]/g,"\\$&");
+L.forEach(([k,tx])=>{const [sz,w,lh]=ST[k]||ST.p,ind=k=="l"?14:0;tx=lat(T(tx));cv.font=`${w} ${sz}px Helvetica,Arial,sans-serif`;if(k=="h")y-=6;
+const rows=[];let cur="";tx.split(" ").forEach(wd=>{const t=cur?cur+" "+wd:wd;if(cv.measureText(t).width>W-2*M-ind&&cur){rows.push(cur);cur=wd}else cur=t});rows.push(cur);
+rows.forEach((r,i)=>{if(y-lh<M+10){pg.push([]);y=H-M}y-=lh;const c=pg[pg.length-1];if(k=="l"&&i==0)c.push(`BT /F1 ${sz} Tf ${M} ${y} Td (-) Tj ET`);if(r)c.push(`BT /F${w?2:1} ${sz} Tf ${M+ind} ${y} Td (${es(r)}) Tj ET`)})});
+const o=[],kd=[];o[1]="<</Type/Catalog/Pages 2 0 R>>";o[3]="<</Type/Font/Subtype/Type1/BaseFont/Helvetica/Encoding/WinAnsiEncoding>>";o[4]="<</Type/Font/Subtype/Type1/BaseFont/Helvetica-Bold/Encoding/WinAnsiEncoding>>";
+pg.forEach((c,i)=>{c.push(`BT /F1 8 Tf ${M} 24 Td (${es(lat(title))} - ${i+1}/${pg.length}) Tj ET`);const s=c.join("\n"),a=5+2*i;kd.push(a+" 0 R");o[a]=`<</Type/Page/Parent 2 0 R/MediaBox[0 0 ${W} ${H}]/Resources<</Font<</F1 3 0 R/F2 4 0 R>>>>/Contents ${a+1} 0 R>>`;o[a+1]=`<</Length ${s.length}>>\nstream\n${s}\nendstream`});
+o[2]=`<</Type/Pages/Count ${pg.length}/Kids[${kd.join(" ")}]>>`;let out="%PDF-1.4\n";const of=[];for(let i=1;i<o.length;i++){of[i]=out.length;out+=`${i} 0 obj\n${o[i]}\nendobj\n`}
+const xr=out.length;out+=`xref\n0 ${o.length}\n0000000000 65535 f \n`+of.slice(1).map(n=>String(n).padStart(10,"0")+" 00000 n \n").join("")+`trailer\n<</Size ${o.length}/Root 1 0 R>>\nstartxref\n${xr}\n%%EOF`;
+const u=new Uint8Array(out.length);for(let i=0;i<out.length;i++)u[i]=out.charCodeAt(i)&255;return new Blob([u],{type:"application/pdf"})}
+async function out(b,name,share){const f=new File([b],name,{type:"application/pdf"});if(share&&navigator.canShare&&navigator.canShare({files:[f]})){try{await navigator.share({files:[f],title:name});return}catch(e){if(e.name=="AbortError")return}}
+const a=document.createElement("a");a.href=URL.createObjectURL(b);a.download=name;document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove()},2000)}
+const fd=()=>new Date().toLocaleDateString("es-ES");
+function planPdf(share){const g=gp(),L=[["t","PLAN DE GRUPO"+(g.name?" - "+g.name:"")],["s","Mi Refugio · "+fd()+" · Emergencias: 112"]];
+FLD.forEach(([k,l])=>{L.push(["h",l],["p",g[k]||"(sin rellenar)"])});L.push(["h","Miembros del grupo"]);
+g.m.length?g.m.forEach(m=>L.push(["l",[m.n,m.t,m.r,m.x].filter(Boolean).join(" · ")||"(vacío)"])):L.push(["p","(sin miembros)"]);
+L.push(["p",""],["s","Guarda una copia en papel y otra en el móvil. Todos deben conocer este plan antes de que haga falta."]);out(mkpdf(L,"Plan de grupo"),"plan-de-grupo.pdf",share)}
+function manPdf(k){const [t,S2,n]=MAN[k],L=[["t",t],["s","Mi Refugio · "+fd()]];S2.forEach(([h,a])=>{L.push(["h",h]);a.forEach(x=>L.push(["l",x]))});L.push(["p",""],["s",n]);out(mkpdf(L,t),t.toLowerCase().replace(/ /g,"-")+".pdf")}
+function viewPg(){const g=gp(),f=(k,l,ta)=>`<label style="display:block;margin-top:8px">${l}${ta?`<textarea data-gp="${k}" rows="2" style="width:100%">${q(g[k])}</textarea>`:`<input data-gp="${k}" value="${q(g[k])}" style="width:100%">`}</label>`;
+return `<div class="pn"><h2>PLAN DE GRUPO</h2><small>Rellénalo, descárgalo en PDF y envíalo a todo el grupo.</small>${FLD.map(x=>f(...x)).join("")}</div><div class="pn"><h2>MIEMBROS · ${g.m.length}</h2>${g.m.map((m,i)=>`<div class="it" style="flex-wrap:wrap;gap:6px">${[["n","Nombre"],["t","Teléfono"],["r","Rol"],["x","Alergias, medicación, notas"]].map(([k,p])=>`<input data-gm="${i}.${k}" placeholder="${p}" value="${q(m[k])}" style="flex:1 1 45%;min-width:0">`).join("")}<button data-gx="${i}">✕</button></div>`).join("")}<div class="row" style="margin-top:8px"><button data-ga="1">+ Miembro</button><button data-gi="1">Importar escuadrón</button></div></div><div class="pn"><div class="row"><button data-gpdf="d">⬇ Descargar PDF</button><button data-gpdf="s">📤 Enviar al grupo</button></div><small>«Enviar» abre el menú de tu móvil (WhatsApp, correo...). Si no está disponible, se descarga el PDF.</small></div>`}
+function viewMn(){return Object.keys(MAN).map(k=>{const [t,S2,n]=MAN[k];return `<div class="pn"><h2>${k=="pa"?"🩹":"🏕"} ${t.toUpperCase()}</h2><div class="row"><button data-mpdf="${k}">⬇ Descargar PDF</button></div>${S2.map(([h,a])=>`<details style="margin-top:8px"><summary><b>${h}</b></summary><ul>${a.map(x=>`<li>${x}</li>`).join("")}</ul></details>`).join("")}<small>${n}</small></div>`}).join("")}
+const _r2=render;render=function(){_r2();if(S.tab=="pg"||S.tab=="mn"){$("v").innerHTML=S.tab=="pg"?viewPg():viewMn()}};
+document.addEventListener("input",e=>{const d=e.target.dataset;if(d.gp){gp()[d.gp]=e.target.value;sv()}if(d.gm){const[i,k]=d.gm.split(".");gp().m[i][k]=e.target.value;sv()}});
+document.addEventListener("click",e=>{const d=e.target.dataset;if(d.ga){gp().m.push({});sv();render()}if(d.gx!==undefined&&d.gx!==""){gp().m.splice(+d.gx,1);sv();render()}
+if(d.gi){const g=gp();(S.sq||[]).forEach(s=>{if(!g.m.some(m=>m.n==s.n))g.m.push({n:s.n,r:s.r})});sv();render()}
+if(d.gpdf)planPdf(d.gpdf=="s");if(d.mpdf)manPdf(d.mpdf)});
+render();
+})();
+</script>
+</body></html>
